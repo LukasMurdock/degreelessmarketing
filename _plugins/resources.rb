@@ -4,6 +4,8 @@ require 'yaml'
 require 'json'
 require 'httparty'
 require "open-uri"
+require "down"
+require "fileutils"
 
 # Set directories
 root_dir =  File.expand_path(".", Dir.pwd)
@@ -51,8 +53,10 @@ for item in dataYaml do
   # p item.class
   unless item.class == String || item.class == Array then
 
+    p "TITLE: #{item["title"].nil?}"
     # Account for different yaml formats
-    if item.values[0][0]["title"].nil? then
+    unless item["title"].nil? then
+      p "IMAGE: #{item["image"].include? "http"}"
       # Check for images not locally hosted
       if item["image"].include? "http" then
         image_title = item["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
@@ -60,53 +64,59 @@ for item in dataYaml do
         file_ext = File.extname(image_url) 
         p "Downloading #{image_title+file_ext}"
 
+
         # puts image_dir
         # puts image_title
         # puts file_ext
 
-        # newName = "/assets/images/resources/" + image_title + file_ext
-        # item["image"] = newName
+        newName = "/assets/images/resources/" + image_title + file_ext
+        item["image"] = newName
   
         # File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
-        # URI.open(image_url) do |image|
-        #   File.open(image_dir+image_title+file_ext, "wb") do |file|
-        #     file.write(image.read)
-        #   end
-        # end
+        # Down.download(image_url, destination: "./")
+
+        # tempfile = Down.download(image_url)
+        # FileUtils.mv(tempfile.path, image_dir+image_title+file_ext)
 
       end
     else
       # Check for images not locally hosted within guides.yaml
-        p item.values[0].length
+        # p item.values[0][1]
         for type in item.values[0] do
           if type.values[3].include? "http" then
             image_title = type.values[0].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
             image_url = type.values[3]
             file_ext = File.extname(image_url) 
             p "Downloading #{image_url} for #{type.values[0]}"
-
+            # p "TYPE: #{type["image"]}"
             newName = "/assets/images/resources/" + image_title + file_ext
-            item.values[0][0]["image"] = newName
+            type["image"] = newName
+            # p "TYPE: #{type["image"]}"
     
           p "Rewriting #{filename} with #{type.values[0]}"
 
+          p "OPEN FILE: #{data_dir+filename}"
+
           File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
-          URI.open(image_url) do |image|
-            File.open(image_dir+image_title+file_ext, "wb") do |file|
-              file.write(image.read)
-            end
-          end
-          end
-        end
+          # URI.open(image_url) do |image|
+          #   File.open(image_dir+image_title+file_ext, "wb") do |file|
+          # file.write(image.read)
+          # end
+          Down.download(image_url, destination: "./")
+
+          tempfile = Down.download(image_url)
+          FileUtils.mv(tempfile.path, image_dir+image_title+file_ext)
+        # end
+      end
+    end
 
     end
     # p item.values[0][0]["image"]
   end
 end
 
-# Titties
 
 # file = File.open(data_dir+filename, "r+")
 # dataYaml = YAML.load(File.read(data_dir+filename))

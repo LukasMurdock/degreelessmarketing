@@ -1,3 +1,4 @@
+---
 - Email Marketing:
   - title: Email Marketing Best Practices
     link: https://lookingformarketing.com/guides/on/email-marketing-best-practices
@@ -7,17 +8,17 @@
   - title: Useful Email Phrases
     link: https://almanac.io/articles/33805/template-150-useful-email-phrases-that-will-make-your-life-easier
     description: 150+ useful email phrases that will make your life easier.
-    image: https://lh3.googleusercontent.com/a-/AOh14GiX1wo8MXGsb6wDgsGFDNsLTg9IXG0zJ-oeQU5a
+    image: "/assets/images/resources/useful-email-phrases"
   - title: Link Building Email Template
     link: https://almanac.io/articles/31972/template-22-link-building-emails
     description: Guest blogging, resource link, broken link, suggessions, infographic,
       reclaimation, edu, influencer, and more.
-    image: https://lh3.googleusercontent.com/a-/AOh14Gg5q5q3hmSFcOQdhBlnvDKQ_6PjXYRRB4R-xaKK
+    image: "/assets/images/resources/link-building-email-template"
   - title: The Email Marketing Strategy Guide
     link: https://www.clickminded.com/email-marketing-strategy/
     description: Create massively profitable email marketing & automation campaigns
       for any website.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-email-hero-section-min.png
+    image: "/assets/images/resources/the-email-marketing-strategy-guide.png"
     radius: false
 - Paid Advertising:
   - title: Google Analytics Academy
@@ -41,7 +42,7 @@
   - title: Microsoft Advertising Learning Lab
     link: https://learninglab.about.ads.microsoft.com/
     description: Your place for all Microsoft Advertising training.
-    image: https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b
+    image: "/assets/images/resources/microsoft-advertising-learning-lab"
     radius: false
   - title: The Digital Advertising Strategy Guide
     link: https://www.clickminded.com/digital-advertising-strategy/
@@ -58,7 +59,7 @@
   - title: Comprehensive SEO Audit Checklist
     link: https://www.iqseo.org/seo-audit-checklist/
     description: See 200+ audit points and the tools you need to gather them.
-    image: https://www.iqseo.org/wp-content/uploads/2018/06/iq-SEO-logo.png
+    image: "/assets/images/resources/comprehensive-seo-audit-checklist.png"
     radius: false
   - title: The SEO Strategy Guide
     link: https://www.clickminded.com/seo-strategy/
@@ -82,11 +83,11 @@
   - title: Writing SEO-Friendly Content
     link: https://www.manaferra.com/how-to-write-seo-friendly-content/
     description: A guide that shows you every step of how to write SEO-friendly content.
-    image: https://secure.gravatar.com/avatar/b4567eca523f1ad059afdd5a8cb68d6f?s=40&d=mm&r=g
+    image: "/assets/images/resources/writing-seo-friendly-content"
   - title: The Content Marketing Strategy Guide
     link: https://www.clickminded.com/content-marketing-strategy/
     description: Create a massively profitable content strategy for any website.
-    image: "https://www.clickminded.com/wp-content/uploads/Illustration-content-min.png"
+    image: "/assets/images/resources/the-content-marketing-strategy-guide.png"
     radius: false
 - Web Analytics:
   - title: The Web Analytics Strategy Guide
