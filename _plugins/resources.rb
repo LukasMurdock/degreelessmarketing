@@ -31,6 +31,9 @@ Dir.foreach(data_dir) do |filename|
   dataYaml = YAML.load(File.read(data_dir+filename))
   dataMarkdown = File.read(data_dir+filename)
   file.close
+  p "***********BEFORE************"
+  p dataYaml
+  p "***********BEFORE************"
 
   # file = File.open(data_dir+"guides.yaml", "r+")
   # dataYaml = YAML.load(File.read(data_dir+"guides.yaml"))
@@ -45,19 +48,55 @@ Dir.foreach(data_dir) do |filename|
 
   # puts dataYaml
 for item in dataYaml do
-  p item.class
+  # p item.class
   unless item.class == String || item.class == Array then
 
+    # Account for different yaml formats
     if item.values[0][0]["title"].nil? then
-      p item["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-      p item["image"]
+      # Check for images not locally hosted
+      if item["image"].include? "http" then
+        image_title = item["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+        image_url = item["image"]
+        file_ext = File.extname(image_url) 
+
+        # puts image_dir
+        # puts image_title
+        # puts file_ext
+
+        newName = "/assets/images/resources/" + image_title + file_ext
+        item["image"] = newName
+
+        # p item.to_a
+
+        # insert_array = ["slug", "#{slug}"]
+
+        # bookArray.insert(3, insert_array)
+
+        # bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
+  
+        # File.open(book_dir+filename, "w") {|f| f.write(bookYaml)}
+
+        # URI.open(image_url) do |image|
+        #   File.open(image_dir+image_title+file_ext, "wb") do |file|
+        #     file.write(image.read)
+        #   end
+        # end
+
+      end
     else
-      p item.values[0][0]["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-      p item.values[0][0]["image"]
+      # Check for images not locally hosted
+      if item.values[0][0]["image"].include? "http" then
+        p item.values[0][0]["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+        p item.values[0][0]["image"]
+      end
     end
     # p item.values[0][0]["image"]
   end
 end
+
+p "***********AFTER************"
+p dataYaml
+p "***********AFTER************"
   # p dataYaml[0].key("image")
   # p dataYaml.key("image")
 
