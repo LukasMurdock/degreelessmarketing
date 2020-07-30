@@ -1,3 +1,4 @@
+---
 - title: Akimbo Workshops
   link: https://akimbo.com/
   description: Proven, powerful and efficient online communities that help people
@@ -48,4 +49,10 @@
   description: From quick, practical courses to comprehensive certifications, learn
     everything you need to know about the most sought-after business skills.
   image: "/assets/images/resources/hubspot-academy.svg"
+  radius: false
+- title: The Win Without Pitching Workshop
+  link: https://www.winwithoutpitching.com/workshops/
+  description: Where creative, marketing and digital firms learn to finally take control
+    of their sales process and actually enjoy it.
+  image: "/assets/images/resources/the-win-without-pitching-workshop.svg"
   radius: false

@@ -1,3 +1,4 @@
+---
 - title: TL;DR Marketing
   link: https://tldrmarketing.com/
   description: Get the latest breaking news and trends about paid media and digital
@@ -19,3 +20,29 @@
   description: Marketing, entrepreneurship, and the ongoing study of how influence
     spreads from founder Rand Fishkin.
   image: "/assets/images/resources/sparktoro-blog.jpg"
+- title: Morning Brew
+  link: https://www.morningbrew.com/
+  description: The daily email that makes reading the news actually enjoyable.
+  image: "/assets/images/resources/morning-brew.png"
+  radius: false
+- title: Visual Capitalist
+  link: https://www.visualcapitalist.com/
+  description: Rich visual content for the modern investor. Visual Capitalist is a
+    new way to discover business opportunities and learn about investment trends.
+  image: "/assets/images/resources/visual-capitalist.png"
+  radius: false
+- title: Social Media Today
+  link: https://www.socialmediatoday.com/
+  description: The latest news, trends, and tips in social media.
+  image: "/assets/images/resources/social-media-today.svg"
+  radius: false
+- title: Google Trends
+  link: https://trends.google.com/trends/subscriptions
+  description: Get trending searches right to your inbox.
+  image: "/assets/images/resources/google-trends.png"
+  radius: false
+- title: CXL newsletter
+  link: https://cxl.com/newsletter/
+  description: Join 95,000+ analysts, optimizers, digital marketers, and UX practitioners with emails on growth and optimization.
+  image: "/assets/images/resources/cxl-newsletter.svg"
+  radius: false

@@ -27,8 +27,6 @@ Dir.foreach(data_dir) do |filename|
   fileRead = YAML.load_file(data_dir+filename)
 
   puts "Pulling images for "+filename
-  puts filename
-  p "#################"
   file = File.open(data_dir+filename, "r+")
   dataYaml = YAML.load(File.read(data_dir+filename))
   dataMarkdown = File.read(data_dir+filename)
@@ -76,8 +74,9 @@ for item in dataYaml do
 
         # Down.download(image_url, destination: "./")
 
-        # tempfile = Down.download(image_url)
-        # FileUtils.mv(tempfile.path, image_dir+image_title+file_ext)
+        tempfile = Down.download(image_url)
+        p tempfile.content_type
+        FileUtils.mv(tempfile.path, image_dir+image_title+file_ext)
 
       end
     else
