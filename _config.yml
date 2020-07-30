@@ -71,7 +71,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: /assets/images/weblogo.jpg
+      image: /assets/images/weblogo.png
       
 
 permalink: /:categories/:title

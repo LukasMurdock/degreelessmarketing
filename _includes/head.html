@@ -23,7 +23,7 @@
     <meta property="og:description" content="{{ page.description }}" />
     <link rel="canonical" href="{{ baseurl }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ baseurl }}" />
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
     <meta property="og:site_name" content="Degreeless.marketing" />
     <meta property="og:image" content="{{ page.image }}" />
     <script type="application/ld+json">
