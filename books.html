@@ -17,13 +17,17 @@ description: A collection of books to help you do better marketing. Each one is 
             <!-- <p class="category">{{ book.category }}</p> -->
             </div>
         </div>
-        <div class="bookLinkContainer">
-        {% for link_hash in book.links %}
-        {% for link in link_hash %}
-        <a href="{{ link[1] }}" target="_blank" rel="noopener" class="heroButton buttonFill buttonLine">{{ link[0] }}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+        {% for hash in book.links %}
+            {% if hash.first %}
+                <div class="bookLinkContainer">
+                    {% for link_hash in book.links %}
+                    {% for link in link_hash %}
+                    <a href="{{ link[1] }}" target="_blank" rel="noopener" class="heroButton buttonFill buttonLine">{{ link[0] }}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+            {% endif %}
         {% endfor %}
-        {% endfor %}
-        </div>
     </div>
     {% endfor %}
 </div>
