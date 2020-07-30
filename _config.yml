@@ -22,7 +22,7 @@ title: Degreeless.marketing
 email: lukas.murdock@gmail.com
 description: Marketing for self-learners.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://degreeless.design.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://degreeless.design" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Lukasauras_Rex
 github_username:  
 
