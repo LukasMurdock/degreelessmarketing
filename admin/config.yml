@@ -48,9 +48,12 @@ collections:
       - name: "courses"
         label: "Courses"
         file: "_data/courses.yaml"
-        widget: list
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Link", name: "link", widget: "string"}
-          - {label: "Description", name: "description", required: false, widget: "string"}
-          - {image: "Favorite", name: "image", widget: "image", media_folder: "/assets/images/resources/", public_folder: "/assets/images/resources/"}
+          - name: "list"
+            label: "Resource"
+            widget: list
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "Description", name: "description", required: false, widget: "string"}
+              - {image: "Favorite", name: "image", widget: "image", media_folder: "/assets/images/resources/", public_folder: "/assets/images/resources/"}
