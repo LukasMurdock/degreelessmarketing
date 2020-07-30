@@ -78,44 +78,29 @@ for item in dataYaml do
       end
     else
       # Check for images not locally hosted within guides.yaml
-      if item.values[0][0]["image"].include? "http" then
-        image_title = item.values[0][0]["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-        image_url = item.values[0][0]["image"]
-        file_ext = File.extname(image_url) 
-        p "Downloading #{item.values[0][0]["image"]} for #{item.values[0][0]["title"]}"
+        p item.values[0].length
+        for type in item.values[0] do
+          if type.values[3].include? "http" then
+            image_title = type.values[0].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+            image_url = type.values[3]
+            file_ext = File.extname(image_url) 
+            p "Downloading #{image_url} for #{type.values[0]}"
 
-        # puts image_dir
-        # puts image_title
-        # puts file_ext
+            newName = "/assets/images/resources/" + image_title + file_ext
+            item.values[0][0]["image"] = newName
+    
+          p "Rewriting #{filename} with #{type.values[0]}"
 
-        newName = "/assets/images/resources/" + image_title + file_ext
-        item["image"] = newName
+          File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
-        # Find and replace to clean dataYaml.to_yaml
-
-
-
-
-      # resourceText = bookMarkdown.partition("\n---\n").last
-      # bookArray = bookYaml.to_a
-
-      # insert_array = ["slug", "#{slug}"]
-
-      # bookArray.insert(3, insert_array)
-
-      # bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
-
-      p "Rewriting #{filename} with #{item.values[0][0]["title"]}"
-        
-      File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
-
-      URI.open(image_url) do |image|
-        File.open(image_dir+image_title+file_ext, "wb") do |file|
-          file.write(image.read)
+          URI.open(image_url) do |image|
+            File.open(image_dir+image_title+file_ext, "wb") do |file|
+              file.write(image.read)
+            end
+          end
+          end
         end
-      end
 
-      end
     end
     # p item.values[0][0]["image"]
   end
