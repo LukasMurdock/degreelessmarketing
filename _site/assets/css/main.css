@@ -67,8 +67,12 @@ padding-left: 0;
 }
 
 .headerCaption {
-color: #F94643;
+color: #DD3532;
 font-weight: 600;
+}
+
+.redText {
+    color: #DD3532;
 }
 
 .section-split {

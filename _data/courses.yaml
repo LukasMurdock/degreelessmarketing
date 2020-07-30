@@ -25,10 +25,6 @@
   description: Exclusive community & online training.
   image: "/assets/images/resources/seo-blueprint.jpg"
   radius: false
-- title: The Futur
-  link: https://thefutur.com/shop
-  description: Courses & Resources for creative professionals of all levels.
-  image: "/assets/images/resources/the-futur.jpg"
 - title: Priceonomics Content Marketing
   link: https://priceonomics.teachable.com/p/priceonomics-content-marketing-bootcamp/
   description: How to create content marketing that performs.
@@ -56,3 +52,7 @@
     of their sales process and actually enjoy it.
   image: "https://lh3.googleusercontent.com/a-/AOh14GiX1wo8MXGsb6wDgsGFDNsLTg9IXG0zJ-oeQU5a"
   radius: false
+- title: The Futur
+  link: https://thefutur.com/shop
+  description: Courses & Resources for creative professionals of all levels.
+  image: "/assets/images/resources/the-futur.jpg"
