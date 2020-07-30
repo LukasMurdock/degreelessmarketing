@@ -60,9 +60,9 @@ for item in dataYaml do
         file_ext = File.extname(image_url) 
         p "Downloading #{image_title+file_ext}"
 
-        puts image_dir
-        puts image_title
-        puts file_ext
+        # puts image_dir
+        # puts image_title
+        # puts file_ext
 
         # newName = "/assets/images/resources/" + image_title + file_ext
         # item["image"] = newName
@@ -77,16 +77,16 @@ for item in dataYaml do
 
       end
     else
-      # Check for images not locally hosted
+      # Check for images not locally hosted within guides.yaml
       if item.values[0][0]["image"].include? "http" then
         image_title = item.values[0][0]["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
         image_url = item.values[0][0]["image"]
         file_ext = File.extname(image_url) 
-        p "Downloading #{image_title+file_ext}"
+        p "Downloading #{item.values[0][0]["image"]} for #{item.values[0][0]["title"]}"
 
-        puts image_dir
-        puts image_title
-        puts file_ext
+        # puts image_dir
+        # puts image_title
+        # puts file_ext
 
         newName = "/assets/images/resources/" + image_title + file_ext
         item["image"] = newName
@@ -104,15 +104,16 @@ for item in dataYaml do
       # bookArray.insert(3, insert_array)
 
       # bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
-        
-  
-      File.open(data_dir+filename, "w") {|f| f.write(dataYaml.gsub "---", "")}
 
-      # URI.open(image_url) do |image|
-      #   File.open(image_dir+image_title+file_ext, "wb") do |file|
-      #     file.write(image.read)
-      #   end
-      # end
+      p "Rewriting #{filename} with #{item.values[0][0]["title"]}"
+        
+      File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
+
+      URI.open(image_url) do |image|
+        File.open(image_dir+image_title+file_ext, "wb") do |file|
+          file.write(image.read)
+        end
+      end
 
       end
     end
@@ -120,9 +121,22 @@ for item in dataYaml do
   end
 end
 
-p "***********AFTER************"
-p dataYaml.to_yaml
-p "***********AFTER************"
+# Titties
+
+# file = File.open(data_dir+filename, "r+")
+# dataYaml = YAML.load(File.read(data_dir+filename))
+# dataMarkdown = File.read(data_dir+filename)
+# file.close
+
+# dataYaml = dataYaml.to_yaml.gsub("---\n", "")
+
+# p "***********AFTER************"
+# p dataYaml
+# p "***********AFTER************"
+
+
+
+# File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
   # p dataYaml[0].key("image")
   # p dataYaml.key("image")

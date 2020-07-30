@@ -1,9 +1,10 @@
+---
 - Email Marketing:
   - title: Email Marketing Best Practices
     link: https://lookingformarketing.com/guides/on/email-marketing-best-practices
     description: A best practice guide for anyone looking to build or send marketing
       emails.
-    image: http://lookingformarketing.com/logo.svg
+    image: "/assets/images/resources/email-marketing-best-practices.svg"
   - title: Useful Email Phrases
     link: https://almanac.io/articles/33805/template-150-useful-email-phrases-that-will-make-your-life-easier
     description: 150+ useful email phrases that will make your life easier.
@@ -17,27 +18,26 @@
     link: https://www.clickminded.com/email-marketing-strategy/
     description: Create massively profitable email marketing & automation campaigns
       for any website.
-    image: "/assets/images/resources/email-marketing-best-practices.svg"
+    image: https://www.clickminded.com/wp-content/uploads/Illustration-email-hero-section-min.png
     radius: false
-    image: "/assets/images/resources/email-marketing-best-practices.svg"
 - Paid Advertising:
   - title: Google Analytics Academy
     link: https://analytics.google.com/analytics/academy/
     description: Analytics Academy helps you learn about Google's measurement tools
       so that you can grow your business through intelligent data collection and analysis.
-    image: https://skillshop.withgoogle.com/src/static/images/home_explore_skillshop_3@2x.png
+    image: "/assets/images/resources/google-analytics-academy.png"
     radius: false
   - title: Facebook Blueprint
     link: https://www.facebook.com/business/learn
     description: Explore self-paced and step-by-step tutorials that can help you build
       your digital marketing knowledge and bring your business online.
-    image: https://scontent.fcmh1-1.fna.fbcdn.net/v/t39.8562-6/102526897_633611183895090_5100185621465399296_n.svg?_nc_cat=1&_nc_sid=6825c5&_nc_ohc=Rg-ryX-0RnwAX_eqtfg&_nc_ht=scontent.fcmh1-1.fna&oh=62fcaf967f217a7fa656a76089971ded&oe=5F4926F3
+    image: "/assets/images/resources/facebook-blueprint.svg"
     radius: false
   - title: Twitter Flight School
     link: https://www.twitterflightschool.com/student/catalog
     description: Explore self-paced and step-by-step tutorials that can help you build
       your digital marketing knowledge and bring your business online.
-    image: https://cdn.exceedlms.com/uploads/organizations/branding_logos/2937/full/TFS_LOGO_ANINMATION_400x144_V2.2.gif?1591373512&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uZXhjZWVkbG1zLmNvbS91cGxvYWRzL29yZ2FuaXphdGlvbnMvYnJhbmRpbmdfbG9nb3MvMjkzNy9mdWxsL1RGU19MT0dPX0FOSU5NQVRJT05fNDAweDE0NF9WMi4yLmdpZj8xNTkxMzczNTEyIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNTk2MDg1MDAxfX19XX0_&Signature=QDPaCY3mh8iWCbiOrSYVr0dFbcX3dzJ5d6aigO71lEB5VtQDeFQXnn3bNVgPZXcr5ZWcmoOJWI1Qvn1lLvv4AL5Yh3OEGsW3xeKVzWGhmWAttHy0cdpJ29YH2ExHNfVHA4EJXPe9pRp9phbQv2OyfSfZlaET5O2mb0ueDLhhB8i6LyWBbLQfAUb95V01OmI2wUj7ibeKl4G6W3efg6xBjpQAL2PmIQuRmivLDSBVOyPGSGzZMWpY6QUhuL8jSmBirOE9-pLEVYiaA98uv1vVKTHdDxbElwl3B~drnl~hneuQZY8wfGzDgY33IQRsZm6Km4pBav~MNQyGcT1RM1dbzg__&Key-Pair-Id=APKAJINUZDMKZJI5I6DA
+    image: /assets/images/resources/twitter-flight-school.gif
     radius: false
   - title: Microsoft Advertising Learning Lab
     link: https://learninglab.about.ads.microsoft.com/
@@ -48,15 +48,14 @@
     link: https://www.clickminded.com/digital-advertising-strategy/
     description: Create massively profitable Facebook & Adwords campaigns for any
       website.
-    image: "/assets/images/resources/google-analytics-academy.png"
+    image: "/assets/images/resources/the-digital-advertising-strategy-guide.png"
     radius: false
-    image: "/assets/images/resources/google-analytics-academy.png"
 - Search Engine Optimization:
   - title: Common Sense SEO Checklist
     link: https://css-tricks.com/common-sense-seo-checklist/
     description: Set aside all the fancy technical stuff and just use some good ol’
       common sense.
-    image: https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=80&d=retro&r=pg
+    image: https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67
   - title: Comprehensive SEO Audit Checklist
     link: https://www.iqseo.org/seo-audit-checklist/
     description: See 200+ audit points and the tools you need to gather them.
@@ -65,9 +64,9 @@
   - title: The SEO Strategy Guide
     link: https://www.clickminded.com/seo-strategy/
     description: Massively increase traffic and sales from search engines to any website.
-    image: "/assets/images/resources/common-sense-seo-checklist"
+    image: https://www.clickminded.com/wp-content/uploads/Illustration-hero-section-min-2.png
     radius: false
-    image: "/assets/images/resources/common-sense-seo-checklist"
+  image: "/assets/images/resources/common-sense-seo-checklist"
 - Social Media Marketing:
   - title: The Social Media Strategy Guide
     link: https://www.clickminded.com/social-media-marketing-strategy/
@@ -91,7 +90,7 @@
     description: Create a massively profitable content strategy for any website.
     image: "/assets/images/resources/the-content-marketing-handbook.png"
     radius: false
-    image: "/assets/images/resources/the-content-marketing-handbook.png"
+  image: "/assets/images/resources/the-content-marketing-handbook.png"
 - Web Analytics:
   - title: The Web Analytics Strategy Guide
     link: https://www.clickminded.com/website-analytics-strategy/
