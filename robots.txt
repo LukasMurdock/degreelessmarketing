@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://kenrmurdock.com/sitemap.xml

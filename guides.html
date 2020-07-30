@@ -1,0 +1,28 @@
+---
+layout: default
+title: Guides
+description: Lessons to progress at your own pace and spaces to make smart connections.
+---
+
+<div class="allBooks">
+    {% for strategies in site.data.guides %}
+    {% for hash in strategies %}
+    {% assign strategy = hash[0] %}
+    {% assign list = hash[1] %}
+    <h2 class="itemHeader">{{ strategy }}</h2>
+    {% endfor %}
+    {% for item in list %}
+    <div class="itemContainer">
+        {% if item.radius == false %}
+            <img class="noRadius" height="38" loading="lazy" src="{{item.image}}">
+            {% else %}
+            <img height="38" loading="lazy" src="{{item.image}}">
+        {% endif %}
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <!-- <p class="category">{{ book.category }}</p> -->
+        <a href="{{ item.link }}" target="_blank" rel="noopener" class="heroButton alignLeft">Go to {{ item.title }}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+    </div>
+    {% endfor %}
+    {% endfor %}
+</div>

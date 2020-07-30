@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+{% include head.html %}
+
+<body class="pagebody">
+    {% include sitenav.html %}
+
+    <section class="section-split">
+        <div class="twoColumnLayout">
+            <div>
+            <h1 class="heroHeader">{{page.title}}</h1>
+            <p>by <strong>{{page.author}}</strong></p>
+            {{ content }}
+            <a href="{{ page.link }}" title="Search for {{ page.title }}" target="_blank" rel="noopener">
+                <img src="/assets/images/books/{{ page.image }}" alt="{{ page.title }}">
+            </a>
+        </div>
+
+        <div>
+        <!-- <a href="" class="heroButton">Learn How<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a> -->
+        {% for link_hash in page.links %}
+            {% for link in link_hash %}
+                <a href="{{ link[1] }}" target="_blank" rel="noopener" class="heroButton buttonFill">{{ link[0] }}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            {% endfor %}
+        {% endfor %}
+
+    
+        </div>
+    </section>
+    
+    {% include footer.html %}
+</body>
+
+</html>
