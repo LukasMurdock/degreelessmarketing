@@ -163,6 +163,31 @@ Dir.foreach(book_dir) do |filename|
   end
 
 
+  unless fileRead.include? 'description' then
+    puts "Getting Description for "+filename
+    file = File.open(book_dir+filename, "r+")
+    bookYaml = YAML.load(File.read(book_dir+filename))
+    bookMarkdown = File.read(book_dir+filename)
+    file.close
+
+    descriptionText = bookYaml["title"]+" is part of a collection of books to help you do better marketing."
+
+    bookText = bookMarkdown.partition("\n---\n").last
+    bookArray = bookYaml.to_a
+
+    insert_array = ["description", "#{descriptionText}"]
+
+    bookArray.insert(3, insert_array)
+
+
+
+    bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
+    
+    File.open(book_dir+filename, "w") {|f| f.write(bookYaml)}
+
+  end
+
+
 
   # Put all filenames into array.
   currentOrderArray.append(filename)
