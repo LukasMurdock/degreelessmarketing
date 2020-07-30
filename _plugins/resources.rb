@@ -31,9 +31,9 @@ Dir.foreach(data_dir) do |filename|
   dataYaml = YAML.load(File.read(data_dir+filename))
   dataMarkdown = File.read(data_dir+filename)
   file.close
-  p "***********BEFORE************"
-  p dataYaml
-  p "***********BEFORE************"
+  # p "***********BEFORE************"
+  # p dataYaml
+  # p "***********BEFORE************"
 
   # file = File.open(data_dir+"guides.yaml", "r+")
   # dataYaml = YAML.load(File.read(data_dir+"guides.yaml"))
@@ -58,6 +58,7 @@ for item in dataYaml do
         image_title = item["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
         image_url = item["image"]
         file_ext = File.extname(image_url) 
+        p "Downloading #{image_title+file_ext}"
 
         # puts image_dir
         # puts image_title
@@ -66,21 +67,15 @@ for item in dataYaml do
         newName = "/assets/images/resources/" + image_title + file_ext
         item["image"] = newName
 
-        # p item.to_a
-
-        # insert_array = ["slug", "#{slug}"]
-
-        # bookArray.insert(3, insert_array)
-
         # bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
   
-        # File.open(book_dir+filename, "w") {|f| f.write(bookYaml)}
+        File.open(data_dir+filename, "w") {|f| f.write(dataYaml)}
 
-        # URI.open(image_url) do |image|
-        #   File.open(image_dir+image_title+file_ext, "wb") do |file|
-        #     file.write(image.read)
-        #   end
-        # end
+        URI.open(image_url) do |image|
+          File.open(image_dir+image_title+file_ext, "wb") do |file|
+            file.write(image.read)
+          end
+        end
 
       end
     else
@@ -94,9 +89,10 @@ for item in dataYaml do
   end
 end
 
-p "***********AFTER************"
-p dataYaml
-p "***********AFTER************"
+# p "***********AFTER************"
+# p dataYaml
+# p "***********AFTER************"
+
   # p dataYaml[0].key("image")
   # p dataYaml.key("image")
 
@@ -107,7 +103,6 @@ p "***********AFTER************"
   # end
 
   # Find image index in resource
-  p "TITTES"
   # p dataYaml.include?('image')
   # p dataYaml.select {|image| image["image"]}
 
