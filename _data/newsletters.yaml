@@ -1,21 +1,22 @@
-
-- title: "TL;DR Marketing"
-  link: "https://tldrmarketing.com/"
-  description: "Get the latest breaking news and trends about paid media and digital marketing."
-  image: "https://tldrmarketing.com/wp-content/themes/tldrtheme_v2.0.0/images/saijo-george-168.jpg"
-
-- title: "Seth’s blog"
-  link: "https://seths.blog/"
-  description: "Seth Godin's Blog on marketing, tribes and respect."
-  image: "https://seths.blog/wp-content/themes/godin/img/seth.png"
-
-- title: "Search Engine Roundtable"
-  link: "https://www.seroundtable.com/"
-  description: "A well-rounded view on search engines and search engine marketing from five segments of the Web population represented by senior members of the major SEO/SEM forums on the Internet."
-  image: "https://www.seroundtable.com/images/logo.png"
+---
+- title: TL;DR Marketing
+  link: https://tldrmarketing.com/
+  description: Get the latest breaking news and trends about paid media and digital
+    marketing.
+  image: "/assets/images/resources/tldr-marketing.jpg"
+- title: Seth’s blog
+  link: https://seths.blog/
+  description: Seth Godin's Blog on marketing, tribes and respect.
+  image: "/assets/images/resources/seths-blog.png"
+- title: Search Engine Roundtable
+  link: https://www.seroundtable.com/
+  description: A well-rounded view on search engines and search engine marketing from
+    five segments of the Web population represented by senior members of the major
+    SEO/SEM forums on the Internet.
+  image: "/assets/images/resources/search-engine-roundtable.png"
   radius: false
-
-- title: "SparkToro Blog"
-  link: "https://sparktoro.com/blog/"
-  description: "Marketing, entrepreneurship, and the ongoing study of how influence spreads from founder Rand Fishkin."
-  image: "https://sparktoro.com/blog/wp-content/themes/sparktoro-v2/img/rand-head.jpg"
+- title: SparkToro Blog
+  link: https://sparktoro.com/blog/
+  description: Marketing, entrepreneurship, and the ongoing study of how influence
+    spreads from founder Rand Fishkin.
+  image: "/assets/images/resources/sparktoro-blog.jpg"

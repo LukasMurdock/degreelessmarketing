@@ -66,10 +66,8 @@ for item in dataYaml do
 
         newName = "/assets/images/resources/" + image_title + file_ext
         item["image"] = newName
-
-        # bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
   
-        File.open(data_dir+filename, "w") {|f| f.write(dataYaml)}
+        File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
         URI.open(image_url) do |image|
           File.open(image_dir+image_title+file_ext, "wb") do |file|
@@ -81,8 +79,26 @@ for item in dataYaml do
     else
       # Check for images not locally hosted
       if item.values[0][0]["image"].include? "http" then
-        p item.values[0][0]["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-        p item.values[0][0]["image"]
+        image_title = item.values[0][0]["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+        image_url = item.values[0][0]["image"]
+        file_ext = File.extname(image_url) 
+        p "Downloading #{image_title+file_ext}"
+
+        # puts image_dir
+        # puts image_title
+        # puts file_ext
+
+        newName = "/assets/images/resources/" + image_title + file_ext
+        item["image"] = newName
+  
+        File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
+
+        URI.open(image_url) do |image|
+          File.open(image_dir+image_title+file_ext, "wb") do |file|
+            file.write(image.read)
+          end
+        end
+
       end
     end
     # p item.values[0][0]["image"]

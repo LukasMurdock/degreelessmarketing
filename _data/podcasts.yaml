@@ -1,14 +1,16 @@
-- title: "Akimbo"
-  link: "https://www.akimbo.link/"
-  description: "A podcast about our culture and about how we can change it. About seeing what's happening and choosing to do something."
-  image: "https://seths.blog/wp-content/themes/godin/img/seth.png"
-
-- title: "Search Off the Record"
-  link: "https://developers.google.com/search/podcasts/search-off-the-record"
-  description: "Take a peek behind the scenes of Google Search and its inner workings with the folks from the Search Relations team."
-  image: "https://developers.google.com/site-assets/logo-google-g.svg"
-
-- title: "Adventures in Local Marketing"
-  link: "https://www.brightlocal.com/podcast/"
-  description: "A BrightLocal podcast that tells the stories from the front line of local marketing."
-  image: "https://corp-brightlocal.imgix.net/2020/06/logo-webpage.png?auto=compress%2Cformat&fit=scale&h=320&ixlib=php-1.2.1&q=70&w=320&wpsize=posts_image-320"
+---
+- title: Akimbo
+  link: https://www.akimbo.link/
+  description: A podcast about our culture and about how we can change it. About seeing
+    what's happening and choosing to do something.
+  image: "/assets/images/resources/akimbo.png"
+- title: Search Off the Record
+  link: https://developers.google.com/search/podcasts/search-off-the-record
+  description: Take a peek behind the scenes of Google Search and its inner workings
+    with the folks from the Search Relations team.
+  image: "/assets/images/resources/search-off-the-record.svg"
+- title: Adventures in Local Marketing
+  link: https://www.brightlocal.com/podcast/
+  description: A BrightLocal podcast that tells the stories from the front line of
+    local marketing.
+  image: "/assets/images/resources/adventures-in-local-marketing.1&q=70&w=320&wpsize=posts_image-320"
