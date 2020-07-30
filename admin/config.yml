@@ -50,7 +50,7 @@ collections:
         file: "_data/courses.yaml"
         fields:
           - name: "list"
-            label: "Resource"
+            label: "Course"
             widget: list
             fields:
               - {label: "Title", name: "title", widget: "string"}
