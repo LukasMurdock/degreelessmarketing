@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title == nil or page.title == blank %}(1) Lost{% else %}{{ page.title }}{% endif %}{% unless page.title == 'Degreeless.marketing' and  page.title == nil and page.title == blank %} | Degreeless.marketing{% endunless %}</title>
+    <title>{% if page.title == nil or page.title == blank %}(1) Lost{% else %}{{ page.title }}{% endif %}{% unless page.url == "/" or  page.title == nil or page.title == blank %} | Degreeless.marketing{% endunless %}</title>
     <meta name="description" content="{{ page.description }}">
     <!-- <link rel='canonical' href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | downcase}}"> -->
     <link rel="canonical" href="https://degreeless.marketing{{page.url | replace:'index.html',''}}">
