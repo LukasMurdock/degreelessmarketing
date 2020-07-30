@@ -60,20 +60,20 @@ for item in dataYaml do
         file_ext = File.extname(image_url) 
         p "Downloading #{image_title+file_ext}"
 
-        # puts image_dir
-        # puts image_title
-        # puts file_ext
+        puts image_dir
+        puts image_title
+        puts file_ext
 
-        newName = "/assets/images/resources/" + image_title + file_ext
-        item["image"] = newName
+        # newName = "/assets/images/resources/" + image_title + file_ext
+        # item["image"] = newName
   
-        File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
+        # File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
-        URI.open(image_url) do |image|
-          File.open(image_dir+image_title+file_ext, "wb") do |file|
-            file.write(image.read)
-          end
-        end
+        # URI.open(image_url) do |image|
+        #   File.open(image_dir+image_title+file_ext, "wb") do |file|
+        #     file.write(image.read)
+        #   end
+        # end
 
       end
     else
@@ -84,12 +84,16 @@ for item in dataYaml do
         file_ext = File.extname(image_url) 
         p "Downloading #{image_title+file_ext}"
 
-        # puts image_dir
-        # puts image_title
-        # puts file_ext
+        puts image_dir
+        puts image_title
+        puts file_ext
 
         newName = "/assets/images/resources/" + image_title + file_ext
         item["image"] = newName
+
+        # Find and replace to clean dataYaml.to_yaml
+
+
 
 
       # resourceText = bookMarkdown.partition("\n---\n").last
@@ -102,13 +106,13 @@ for item in dataYaml do
       # bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
         
   
-      File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
+      File.open(data_dir+filename, "w") {|f| f.write(dataYaml.gsub "---", "")}
 
-      URI.open(image_url) do |image|
-        File.open(image_dir+image_title+file_ext, "wb") do |file|
-          file.write(image.read)
-        end
-      end
+      # URI.open(image_url) do |image|
+      #   File.open(image_dir+image_title+file_ext, "wb") do |file|
+      #     file.write(image.read)
+      #   end
+      # end
 
       end
     end
@@ -116,9 +120,9 @@ for item in dataYaml do
   end
 end
 
-# p "***********AFTER************"
-# p dataYaml
-# p "***********AFTER************"
+p "***********AFTER************"
+p dataYaml.to_yaml
+p "***********AFTER************"
 
   # p dataYaml[0].key("image")
   # p dataYaml.key("image")

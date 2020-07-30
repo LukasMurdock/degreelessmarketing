@@ -17,9 +17,9 @@
     link: https://www.clickminded.com/email-marketing-strategy/
     description: Create massively profitable email marketing & automation campaigns
       for any website.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-email-hero-section-min.png
+    image: "/assets/images/resources/email-marketing-best-practices.svg"
     radius: false
-  image: "/assets/images/resources/email-marketing-best-practices.svg"
+    image: "/assets/images/resources/email-marketing-best-practices.svg"
 - Paid Advertising:
   - title: Google Analytics Academy
     link: https://analytics.google.com/analytics/academy/
@@ -48,9 +48,9 @@
     link: https://www.clickminded.com/digital-advertising-strategy/
     description: Create massively profitable Facebook & Adwords campaigns for any
       website.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-paid-hero-section-min.png
+    image: "/assets/images/resources/google-analytics-academy.png"
     radius: false
-  image: "/assets/images/resources/google-analytics-academy.png"
+    image: "/assets/images/resources/google-analytics-academy.png"
 - Search Engine Optimization:
   - title: Common Sense SEO Checklist
     link: https://css-tricks.com/common-sense-seo-checklist/
@@ -65,17 +65,16 @@
   - title: The SEO Strategy Guide
     link: https://www.clickminded.com/seo-strategy/
     description: Massively increase traffic and sales from search engines to any website.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-hero-section-min-2.png
+    image: "/assets/images/resources/common-sense-seo-checklist"
     radius: false
-  image: "/assets/images/resources/common-sense-seo-checklist"
+    image: "/assets/images/resources/common-sense-seo-checklist"
 - Social Media Marketing:
   - title: The Social Media Strategy Guide
     link: https://www.clickminded.com/social-media-marketing-strategy/
     description: Create massively profitable social media marketing campaigns for
       any website.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-social-hero-section-min.png
+    image: "/assets/images/resources/the-social-media-strategy-guide.png"
     radius: false
-  image: "/assets/images/resources/the-social-media-strategy-guide.png"
 - Content Marketing:
   - title: The Content Marketing Handbook
     link: https://priceonomics.com/the-content-marketing-handbook/
@@ -90,22 +89,20 @@
   - title: The Content Marketing Strategy Guide
     link: https://www.clickminded.com/content-marketing-strategy/
     description: Create a massively profitable content strategy for any website.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-content-min.png
+    image: "/assets/images/resources/the-content-marketing-handbook.png"
     radius: false
-  image: "/assets/images/resources/the-content-marketing-handbook.png"
+    image: "/assets/images/resources/the-content-marketing-handbook.png"
 - Web Analytics:
   - title: The Web Analytics Strategy Guide
     link: https://www.clickminded.com/website-analytics-strategy/
     description: Massively increase sales on any website with a powerful analytics
       strategy.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-web-hero-section-min.png
+    image: "/assets/images/resources/the-web-analytics-strategy-guide.png"
     radius: false
-  image: "/assets/images/resources/the-web-analytics-strategy-guide.png"
 - Sales Funnels:
   - title: The Sales Funnel Strategy Guide
     link: https://www.clickminded.com/sales-funnel-strategy/
     description: Massively increase conversions and sales on any website with powerful
       sales funnels.
-    image: https://www.clickminded.com/wp-content/uploads/Illustration-hero-section-min-1.png
+    image: "/assets/images/resources/the-sales-funnel-strategy-guide.png"
     radius: false
-  image: "/assets/images/resources/the-sales-funnel-strategy-guide.png"
