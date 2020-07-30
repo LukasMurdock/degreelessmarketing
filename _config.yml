@@ -36,9 +36,9 @@ plugins:
   - jekyll-sitemap
 
 author: Lukas Murdock
-logo: "/assets/images/kenmurdocklogo.png"
+logo: "/assets/images/logo.png"
 image:
-  path: /assets/images/kenmurdockweblogo.jpg
+  path: /assets/images/weblogo.png
   height: 628
   width: 1200
 social:
@@ -71,7 +71,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: /assets/images/kenmurdockweblogo.jpg
+      image: /assets/images/weblogo.jpg
       
 
 permalink: /:categories/:title

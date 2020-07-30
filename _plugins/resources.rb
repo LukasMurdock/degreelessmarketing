@@ -90,14 +90,25 @@ for item in dataYaml do
 
         newName = "/assets/images/resources/" + image_title + file_ext
         item["image"] = newName
-  
-        File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
-        URI.open(image_url) do |image|
-          File.open(image_dir+image_title+file_ext, "wb") do |file|
-            file.write(image.read)
-          end
+
+      # resourceText = bookMarkdown.partition("\n---\n").last
+      # bookArray = bookYaml.to_a
+
+      # insert_array = ["slug", "#{slug}"]
+
+      # bookArray.insert(3, insert_array)
+
+      # bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
+        
+  
+      File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
+
+      URI.open(image_url) do |image|
+        File.open(image_dir+image_title+file_ext, "wb") do |file|
+          file.write(image.read)
         end
+      end
 
       end
     end

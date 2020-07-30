@@ -3,5 +3,4 @@
  X-XSS-Protection: 1; mode=block
  Referrer-Policy: no-referrer
  X-Content-Type-Options: nosniff
- Content-Security-Policy: default-src 'self' https://kenmurdock.netlify.app/ https://d33wubrfki0l68.cloudfront.net/; object-src 'self' https://www.netlify.com https://identity.netlify.com; script-src 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval' https://unpkg.com/ https://identity.netlify.com; style-src 'self' 'unsafe-inline' 'unsafe-hashes' https://d33wubrfki0l68.cloudfront.net/; img-src 'self' data: blob: https://kenmurdock.netlify.app/ https://avatars2.githubusercontent.com/ https://s2.googleusercontent.com/ https://d33wubrfki0l68.cloudfront.net/; connect-src * blob: https://kenrmurdock.com/
  Feature-Policy: geolocation 'none';midi 'none';notifications 'none';push 'none';sync-xhr 'none';microphone 'none';camera 'none';magnetometer 'none';gyroscope 'none';speaker self;vibrate 'none';fullscreen self;payment 'none';

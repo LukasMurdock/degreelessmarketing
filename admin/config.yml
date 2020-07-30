@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: kenmurdock/kenmurdock
+  repo: lukasmurdock/degreelessmarketing
   branch: master
-  site_domain: kenmurdock.netlify.com
+  site_domain: degreelessmarketing.netlify.app
 
 media_folder: "/assets/images/" # Media files will be stored in the repo under images
 public_folder: "/assets/images/" # The src attribute for uploaded media will begin with /images
@@ -36,6 +36,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false, media_folder: "/assets/images/books/", public_folder: "/assets/images/books/", hint: 'Leave empty to automatically use ISBN photo from Google Books!'}
+      - {label: "Links", name: "links", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: false, hint: 'Leave empty to automatically link to Google Search!'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
@@ -44,56 +45,19 @@ collections:
     editor:
       preview: false
     files:
-      - name: "resourcelist"
-        label: "Resources"
-        file: "_data/resources.yaml"
-        fields:
-          - name: "resources"
-            label: "Resources"
-            widget: "list"
-            fields:
-              - {label: "Type", name: "type", widget: "string"}
-              - name: "list"
-                label: "Resource"
-                widget: list
-                fields:
-                  - {label: "Title", name: "title", widget: "string"}
-                  - {label: "URL", name: "link", widget: "string"}
-                  - {label: "Description", name: "description", widget: "string"}
-                  - {label: "Favorite", name: "favorite", widget: "boolean", default: false, hint: 'This will make it show up on your homepage!'}
-
-  - name: 'pages'
-    label: 'Pages'
-    editor:
-      preview: false
-    files:
-      - label: 'Home'
-        name: 'home'
-        file: 'index.html'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string', default: 'Change Management & Six Sigma Leader' }
-          - { label: 'Description', name: 'description', widget: 'string', default: 'I’m a proven change agent with passion for high performing team environment, excellence and success.' }
-
-      - label: 'Articles'
-        name: 'articles'
-        file: 'articles.html'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string', default: 'Articles' }
-          - { label: 'Description', name: 'description', widget: 'string', default: 'I write semi-regularly about my work as a manager and leader, focusing on high performing changes.' }
-
-      - label: 'About'
-        name: 'about'
-        file: 'about.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string', default: 'About' }
-          - { label: 'Description', name: 'description', widget: 'string', default: 'I’m a field service manager who does work that matters for people who care.' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-
-      - label: 'Contact'
-        name: 'contact'
-        file: 'contact.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'contact' }
-          - { label: 'Description', name: 'description', widget: 'hidden', default: 'contact' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-
+      - name: "courses"
+        label: "Courses"
+        file: "_data/courses.yaml"
+          fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Link", name: "link", widget: "string"}
+            - {label: "Description", name: "description", required: false, widget: "string"}
+            - {image: "Favorite", name: "image", widget: "image", media_folder: "/assets/images/resources/", public_folder: "/assets/images/resources/"}
+      - name: "guides"
+        label: "Guides"
+        file: "_data/guides.yaml"
+          fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Link", name: "link", widget: "string"}
+            - {label: "Description", name: "description", required: false, widget: "string"}
+            - {image: "Favorite", name: "image", widget: "image", media_folder: "/assets/images/resources/", public_folder: "/assets/images/resources/"}
