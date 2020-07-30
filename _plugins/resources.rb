@@ -53,10 +53,10 @@ for item in dataYaml do
   # p item.class
   unless item.class == String || item.class == Array then
 
-    p "TITLE: #{item["title"].nil?}"
+    # p "TITLE: #{item["title"].nil?}"
     # Account for different yaml formats
     unless item["title"].nil? then
-      p "IMAGE: #{item["image"].include? "http"}"
+      # p "IMAGE: #{item["image"].include? "http"}"
       # Check for images not locally hosted
       if item["image"].include? "http" then
         image_title = item["title"].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')

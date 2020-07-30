@@ -8,12 +8,12 @@
   - title: Useful Email Phrases
     link: https://almanac.io/articles/33805/template-150-useful-email-phrases-that-will-make-your-life-easier
     description: 150+ useful email phrases that will make your life easier.
-    image: "/assets/images/resources/useful-email-phrases"
+    image: "/assets/images/resources/useful-email-phrases.jpeg"
   - title: Link Building Email Template
     link: https://almanac.io/articles/31972/template-22-link-building-emails
     description: Guest blogging, resource link, broken link, suggessions, infographic,
       reclaimation, edu, influencer, and more.
-    image: "/assets/images/resources/link-building-email-template"
+    image: "/assets/images/resources/link-building-email-template.jpeg"
   - title: The Email Marketing Strategy Guide
     link: https://www.clickminded.com/email-marketing-strategy/
     description: Create massively profitable email marketing & automation campaigns
@@ -42,7 +42,7 @@
   - title: Microsoft Advertising Learning Lab
     link: https://learninglab.about.ads.microsoft.com/
     description: Your place for all Microsoft Advertising training.
-    image: "/assets/images/resources/microsoft-advertising-learning-lab"
+    image: "/assets/images/resources/microsoft-advertising-learning-lab.png"
     radius: false
   - title: The Digital Advertising Strategy Guide
     link: https://www.clickminded.com/digital-advertising-strategy/
@@ -55,7 +55,7 @@
     link: https://css-tricks.com/common-sense-seo-checklist/
     description: Set aside all the fancy technical stuff and just use some good ol’
       common sense.
-    image: "/assets/images/resources/common-sense-seo-checklist"
+    image: "/assets/images/resources/common-sense-seo-checklist.jpeg"
   - title: Comprehensive SEO Audit Checklist
     link: https://www.iqseo.org/seo-audit-checklist/
     description: See 200+ audit points and the tools you need to gather them.
@@ -83,7 +83,7 @@
   - title: Writing SEO-Friendly Content
     link: https://www.manaferra.com/how-to-write-seo-friendly-content/
     description: A guide that shows you every step of how to write SEO-friendly content.
-    image: "/assets/images/resources/writing-seo-friendly-content"
+    image: "/assets/images/resources/writing-seo-friendly-content.jpeg"
   - title: The Content Marketing Strategy Guide
     link: https://www.clickminded.com/content-marketing-strategy/
     description: Create a massively profitable content strategy for any website.
