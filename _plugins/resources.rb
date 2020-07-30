@@ -75,8 +75,11 @@ for item in dataYaml do
         # Down.download(image_url, destination: "./")
 
         tempfile = Down.download(image_url)
-        p tempfile.content_type
-        FileUtils.mv(tempfile.path, image_dir+image_title+file_ext)
+        scraped_ext = ".#{tempfile.content_type.partition('/').last}"
+        FileUtils.mv(tempfile.path, image_dir+image_title+scraped_ext)
+        # File.delete(tempfile.path)
+        tempfile.unlink
+
 
       end
     else
@@ -88,8 +91,14 @@ for item in dataYaml do
             image_url = type.values[3]
             file_ext = File.extname(image_url) 
             p "Downloading #{image_url} for #{type.values[0]}"
+
+            tempfile = Down.download(image_url)
+            scraped_ext = ".#{tempfile.content_type.partition('/').last}"
+            FileUtils.mv(tempfile.path, image_dir+image_title+scraped_ext)
+            tempfile.unlink
+
             # p "TYPE: #{type["image"]}"
-            newName = "/assets/images/resources/" + image_title + file_ext
+            newName = "/assets/images/resources/" + image_title + scraped_ext
             type["image"] = newName
             # p "TYPE: #{type["image"]}"
     
@@ -99,14 +108,7 @@ for item in dataYaml do
 
           File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
 
-          # URI.open(image_url) do |image|
-          #   File.open(image_dir+image_title+file_ext, "wb") do |file|
-          # file.write(image.read)
-          # end
-          Down.download(image_url, destination: "./")
 
-          tempfile = Down.download(image_url)
-          FileUtils.mv(tempfile.path, image_dir+image_title+file_ext)
         # end
       end
     end
