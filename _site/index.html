@@ -32,8 +32,82 @@
     <meta property="og:site_name" content="Degreeless.marketing" />
     <meta property="og:image" content="http://localhost:4000/assets/images/weblogo.png" />
     <script type="application/ld+json">
-    {"author":{"@type":"Person","name":"Lukas Murdock"},"description":"Lukas Murdock is a human trying to do work that matters. Exploring design, development, and marketing.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://degreeless.marketing/assets/images/logo.png"},"name":"Degreeless.marketing"},"headline":"This is what I would teach to someone if I could teach them marketing.","name":"Degreeless.marketing","sameAs":["https://www.linkedin.com/in/kenmurdock/","https://www.facebook.com/kenrexm/"],"@type":"WebSite","image":"https://degreeless.marketing/assets/images/weblogo.jpg","@id":"https://degreeless.marketing","url":"https://degreeless.marketing/","@context":"https://schema.org"}</script>
-
+  {
+    "@context": "http://www.schema.org",
+    "@graph":
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebPage",
+        "name": "Degreeless.Marketing",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+                "#SpeakableHeadline",
+                "#SpeakableSummary"
+            ]
+        },
+        "url": "https://degreeless.marketing/"
+      },
+      {
+        "@context": "http://www.schema.org",
+        "@type": "Organization",
+        "name": "Degreeless.marketing",
+        "url": "https://degreeless.marketing/",
+        "logo": "https://degreeless.marketing/assets/images/logo.png",
+        "image": "https://degreeless.marketing/assets/images/weblogo.png",
+        "description": "Marketing for self-learners."
+      },
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Degreeless.marketing",
+        "alternateName": "Degreeless Marketing",
+        "url": "https://degreeless.marketing/"
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "SEO",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                    "http://dbpedia.org/page/Search_engine_optimization",
+                    "http://www.wikidata.org/entity/Q180711"
+                  ]
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "Marketing",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Marketing",
+                    "http://dbpedia.org/page/Marketing",
+                    "https://www.wikidata.org/wiki/Q39809"
+                  ]
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "Marketing Management",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Marketing_management",
+                    "http://dbpedia.org/page/Marketing",
+                    "https://www.wikidata.org/wiki/Q1143466"
+                  ]
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "Digital Marketing",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Digital_marketing",
+                    "http://dbpedia.org/page/Digital_marketing",
+                    "https://www.wikidata.org/wiki/Q1323528"
+                  ]
+      }
+    ]
+  }
+</script>
 </head>
 
 <body>
@@ -80,8 +154,8 @@
 
 
 <section class="heroSection">
-    <h1 class="heroHeader">Degreeless<wbr>.Marketing</h1>
-    <p class="heroText"><strong>This is what I would teach to someone if I could teach them marketing.</strong> It’s about doing work that matters for people who care. Not everyone has the privilege to go to school for this stuff. And you need something more.</p>
+    <h1 id="SpeakableHeadline" class="heroHeader">Degreeless<wbr>.Marketing</h1>
+    <p id="SpeakableSummary" class="heroText"><strong>This is what I would teach to someone if I could teach them marketing.</strong> It’s about doing work that matters for people who care. Not everyone has the privilege to go to school for this stuff. And you need something more.</p>
     <p class="heroText">You have to be <em>autodidactic</em>. Become someone who learns things on their own rather than needing someone else to tell you.</p>
     <p class="heroText">That’s why this website exists. This is a collection of everything I’ve found relevant and useful while learning and executing marketing.</p>
     <p class="heroText">This is for you.</p>
@@ -325,12 +399,12 @@
             <span class="headerCaption">03 —</span>
             <h2>Resources</h2>
             <p>Find resources to help you get started, move forward, and level up.</p>
-            <a href="/books/" class="heroButton">Books<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/podcasts/" class="heroButton">Podcasts<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/courses/" class="heroButton">Courses<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/" class="heroButton">Tools<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/guides/" class="heroButton">Guides<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/newsletters/" class="heroButton">Newsletters<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a href="/books/" class="heroButton contrastRed">Books<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a href="/podcasts/" class="heroButton contrastRed">Podcasts<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a href="/courses/" class="heroButton contrastRed">Courses<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a href="/" class="heroButton contrastRed">Tools<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a href="/guides/" class="heroButton contrastRed">Guides<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a href="/newsletters/" class="heroButton contrastRed">Newsletters<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
         </div>
         <div class="mobileTop">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

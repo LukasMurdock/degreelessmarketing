@@ -32,8 +32,82 @@
     <meta property="og:site_name" content="Degreeless.marketing" />
     <meta property="og:image" content="http://localhost:4000strengthsfinder-2-0.jpg" />
     <script type="application/ld+json">
-    {"author":{"@type":"Person","name":"Lukas Murdock"},"description":"Lukas Murdock is a human trying to do work that matters. Exploring design, development, and marketing.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://degreeless.marketing/assets/images/logo.png"},"name":"Degreeless.marketing"},"headline":"This is what I would teach to someone if I could teach them marketing.","name":"Degreeless.marketing","sameAs":["https://www.linkedin.com/in/kenmurdock/","https://www.facebook.com/kenrexm/"],"@type":"WebSite","image":"https://degreeless.marketing/assets/images/weblogo.jpg","@id":"https://degreeless.marketing","url":"https://degreeless.marketing/","@context":"https://schema.org"}</script>
-
+  {
+    "@context": "http://www.schema.org",
+    "@graph":
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebPage",
+        "name": "Degreeless.Marketing",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+                "#SpeakableHeadline",
+                "#SpeakableSummary"
+            ]
+        },
+        "url": "https://degreeless.marketing/"
+      },
+      {
+        "@context": "http://www.schema.org",
+        "@type": "Organization",
+        "name": "Degreeless.marketing",
+        "url": "https://degreeless.marketing/",
+        "logo": "https://degreeless.marketing/assets/images/logo.png",
+        "image": "https://degreeless.marketing/assets/images/weblogo.png",
+        "description": "Marketing for self-learners."
+      },
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Degreeless.marketing",
+        "alternateName": "Degreeless Marketing",
+        "url": "https://degreeless.marketing/"
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "SEO",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Search_engine_optimization",
+                    "http://dbpedia.org/page/Search_engine_optimization",
+                    "http://www.wikidata.org/entity/Q180711"
+                  ]
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "Marketing",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Marketing",
+                    "http://dbpedia.org/page/Marketing",
+                    "https://www.wikidata.org/wiki/Q39809"
+                  ]
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "Marketing Management",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Marketing_management",
+                    "http://dbpedia.org/page/Marketing",
+                    "https://www.wikidata.org/wiki/Q1143466"
+                  ]
+      },
+      {
+        "@context": "http://schema.org/",
+        "@type": "Service",
+        "name": "Digital Marketing",
+        "sameAs": [
+                    "https://en.wikipedia.org/wiki/Digital_marketing",
+                    "http://dbpedia.org/page/Digital_marketing",
+                    "https://www.wikidata.org/wiki/Q1323528"
+                  ]
+      }
+    ]
+  }
+</script>
 </head>
 
 <body class="pagebody">
@@ -80,7 +154,7 @@
     <section class="section-split">
         <div class="twoColumnLayout">
             <div>
-            <h1 class="heroHeader">Strengths Finder 2.0</h1>
+            <h1 id="SpeakableHeadline" class="heroHeader">Strengths Finder 2.0</h1>
             <p>by <strong>Tom Rath</strong></p>
             
 
