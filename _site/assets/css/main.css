@@ -136,8 +136,8 @@ text-decoration: none;
 }
 
 .dropdown {
-padding-left: 40px;
-padding-right: 40px;
+margin-left: 40px;
+margin-right: 40px;
 float: left;
 overflow: hidden;
 }
@@ -432,8 +432,8 @@ line-height: 1.6;
     right: 35%;
 }
 .dropdown {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .quadColumn {

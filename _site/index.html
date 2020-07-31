@@ -135,17 +135,17 @@
       </div>
     </div>  -->
 
-    <div class="dropdown" onclick="dropdownMenuClick(this)" onmouseenter="dropdownEnter(this)" onmouseleave="dropdownLeave(this)">
+    <div id="dropdown" tabindex="0" class="dropdown" onfocus="dropdownEnter(this);books.focus();" onclick="dropdownMenuClick(this)" onmouseenter="dropdownEnter(this)" onmouseleave="dropdownLeave(this)">
         <h3>Resources</h3>
       <div class="dropdown-content">
           <section class="straightList">
                 <ul>
-                    <a href="/books/"><li>Books</li></a>
-                    <a href="/podcasts/"><li>Podcasts</li></a>
-                    <a href="/courses/"><li>Courses</li></a>
-                    <a href="https://saijogeorge.com/best-marketing-tools/"><li>Tools</li></a>
-                    <a href="/guides/"><li>Guides</li></a>
-                    <a href="/newsletters/"><li>Newsletters</li></a>
+                    <a id="books" tabindex="0" href="/books/"><li>Books</li></a>
+                    <a tabindex="0" href="/podcasts/"><li>Podcasts</li></a>
+                    <a tabindex="0"href="/courses/"><li>Courses</li></a>
+                    <a tabindex="0" href="https://saijogeorge.com/best-marketing-tools/"><li>Tools</li></a>
+                    <a tabindex="0" href="/guides/"><li>Guides</li></a>
+                    <a tabindex="0" onfocusout="dropdownLeave(dropdown)" href="/newsletters/"><li>Newsletters</li></a>
                 </ul>
           </section>
       </div>
@@ -399,12 +399,12 @@
             <span class="headerCaption">03 —</span>
             <h2>Resources</h2>
             <p>Find resources to help you get started, move forward, and level up.</p>
-            <a href="/books/" class="heroButton contrastRed">Books<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/podcasts/" class="heroButton contrastRed">Podcasts<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/courses/" class="heroButton contrastRed">Courses<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/" class="heroButton contrastRed">Tools<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/guides/" class="heroButton contrastRed">Guides<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
-            <a href="/newsletters/" class="heroButton contrastRed">Newsletters<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a tabindex="0" href="/books/" class="heroButton contrastRed">Books<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a tabindex="0" href="/podcasts/" class="heroButton contrastRed">Podcasts<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a tabindex="0" href="/courses/" class="heroButton contrastRed">Courses<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a tabindex="0" href="/" class="heroButton contrastRed">Tools<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a tabindex="0" href="/guides/" class="heroButton contrastRed">Guides<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
+            <a tabindex="0" href="/newsletters/" class="heroButton contrastRed">Newsletters<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F94643" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M5 12h14M13 18l6-6M13 6l6 6"/></svg></a>
         </div>
         <div class="mobileTop">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
