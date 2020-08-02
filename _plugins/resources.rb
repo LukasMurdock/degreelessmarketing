@@ -66,19 +66,25 @@ for item in dataYaml do
         # puts image_dir
         # puts image_title
         # puts file_ext
-
-        newName = "/assets/images/resources/" + image_title + file_ext
-        item["image"] = newName
-  
-        # File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
-
-        # Down.download(image_url, destination: "./")
-
         tempfile = Down.download(image_url)
         scraped_ext = ".#{tempfile.content_type.partition('/').last}"
         FileUtils.mv(tempfile.path, image_dir+image_title+scraped_ext)
         # File.delete(tempfile.path)
         tempfile.unlink
+
+        # p "TYPE: #{type["image"]}"
+        p "Rewriting #{filename} with #{item["image"]}"
+        newName = "/assets/images/resources/" + image_title + scraped_ext
+        item["image"] = newName
+        # p "TYPE: #{type["image"]}"
+
+
+  
+        File.open(data_dir+filename, "w") {|f| f.write(dataYaml.to_yaml)}
+
+        # Down.download(image_url, destination: "./")
+
+
 
 
       end
