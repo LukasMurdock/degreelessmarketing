@@ -4,10 +4,12 @@ title: Contact
 description: Say hello and introduce yourself.
 ---
 
-Say hello and introduce yourself.
-
 I love getting to know people around the world.
 
-Introduce yourself, I hope you do.
+If you have a resource to recommend or just a comment, please don’t hold back.
+
+Life is short, hit send.
+
+I hope you do.
 
 {% include contactForm.html %}
