@@ -7,6 +7,7 @@ layout: null
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <language>en-us</language>
     <webfeeds:icon>https://degreeless.marketing/safari-pinned-tab.svg</webfeeds:icon>
     <webfeeds:logo>https://degreeless.marketing/safari-pinned-tab.svg</webfeeds:logo>
     <webfeeds:accentColor>da532c</webfeeds:accentColor>
