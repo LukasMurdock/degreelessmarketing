@@ -8,5 +8,9 @@ slug: good-to-great
 category: Business
 image: good-to-great.jpg
 link: https://www.google.com/search?q=Good+To+Great+by+James+Charles+Collins%2C+Jim+Collins
+links:
+- Buy on Amazon: https://www.amazon.com/Good-Great-Some-Companies-Others-ebook/dp/B0058DRUV6
+  Two Minute Summary: https://www.twominutebooks.com/good-to-great/
+
 
 ---

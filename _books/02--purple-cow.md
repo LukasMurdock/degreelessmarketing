@@ -7,5 +7,8 @@ image: purple-cow.jpg
 slug: purple-cow
 category: Self-Help
 link: https://www.google.com/search?q=Purple+Cow+by+Seth+Godin
+links:
+- Buy on Amazon: https://www.amazon.com/Purple-Cow-New-Transform-Remarkable/dp/1591843170
+  LifeClub Book Summary: https://lifeclub.org/books/purple-cow-seth-godin-review-summary
 
 ---

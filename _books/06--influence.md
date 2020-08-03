@@ -7,5 +7,8 @@ category: Self-Help
 image: influence.jpg
 slug: influence
 link: https://www.google.com/search?q=Influence+by+Robert+B.+Cialdini
+links:
+- Buy on Amazon: https://www.amazon.com/Influence-Psychology-Persuasion-Robert-Cialdini/dp/006124189X
+  Durmonski Book Summary: https://durmonski.com/book-summaries/influence/
 
 ---
