@@ -2,107 +2,91 @@
 layout: null
 ---
 
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"  xmlns:webfeeds="http://webfeeds.org/rss/1.0">
-  <channel>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
     <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <language>en-us</language>
+    <link rel="alternate" type="text/html" href="https://degreeless.marketing/"/>
+    <link rel="self" type="application/atom+xml" href="https://degreeless.marketing/feed.xml"/>
+    <id>https://degreeless.marketing/</id>
+    <subtitle>{{ site.description | xml_escape }}</subtitle>
+    <webfeeds:cover image="https://degreeless.marketing/assets/images/weblogo.png" />
     <webfeeds:icon>https://degreeless.marketing/safari-pinned-tab.svg</webfeeds:icon>
     <webfeeds:logo>https://degreeless.marketing/safari-pinned-tab.svg</webfeeds:logo>
     <webfeeds:accentColor>da532c</webfeeds:accentColor>
     <webfeeds:related layout="card" target="browser"/>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <author>
+      <name>Lukas Murdock</name>
+      <email>Lukas@degreeless.marketing</email>
+      <uri>https://lukasmurdock.com/</uri>
+    </author>
 
     <generator>Jekyll v{{ jekyll.version }}</generator>
 
     {% for post in site.books %}
-        <item>
+      <entry>
         <title>{{ post.title | xml_escape }}</title>
-        <description>
-        {{ post.content | strip_html | xml_escape }}
-        </description>
-        <category domain="https://degreeless.marketing/">Books</category>
-        <image>
-            <url>https://degreeless.marketing/assets/books/{{ post.image }}</url>
-            <title>{{ post.title | xml_escape }}</title>
-            <link>https://degreeless.marketing/books/{{ post.slug }}</link>
-        </image>
-        <guid>https://degreeless.marketing/books/{{ post.slug }}</guid>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>https://degreeless.marketing/books/{{ post.slug }}</link>
-        </item>
+        <id>https://degreeless.marketing/books/{{ post.slug }}</id>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
+        <![CDATA[<a href="https://degreeless.marketing/books/{{ post.slug }}"><img alt="{{ post.title }}" src="https://degreeless.marketing/assets/books/{{ post.image }}" /></a>]]>{{ post.content | strip_html | escape }}
+        </content>
+        <category term="Books"/>
+        <published>{{ post.date | date_to_xmlschema }}</published>
+      </entry>
     {% endfor %}
+
     {% assign sorted = site.data.podcasts | sort: 'date' | reverse %} 
       {% for item in sorted %}
-      <item>
+      <entry>
         <title>{{ item.title | xml_escape }}</title>
-        <description>{{ item.description | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">Podcasts</category>
-        <image>
-          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
-          <title>{{ item.title | xml_escape }}</title>
-          <link>{{ item.link | xml_escape }}</link>
-        </image>
-        <guid>{{ item.link | xml_escape }}</guid>
-        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
-        <link>{{ item.link | xml_escape }}</link>
-      </item>
+        <id>{{ item.link }}</id>
+        <updated>{{ item.date | date_to_xmlschema }}</updated>
+        <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        </content>
+        <category term="Podcasts"/>
+        <published>{{ item.date | date_to_xmlschema }}</published>
+      </entry>
       {% endfor %}
+
       {% assign sorted = site.data.courses | sort: 'date' | reverse %} 
       {% for item in sorted %}
-      <item>
+      <entry>
         <title>{{ item.title | xml_escape }}</title>
-        <description>{{ item.description | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">Courses</category>
-        <image>
-          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
-          <title>{{ item.title | xml_escape }}</title>
-          <link>{{ item.link | xml_escape }}</link>
-        </image>
-        <guid>{{ item.link | xml_escape }}</guid>
-        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
-        <link>{{ item.link | xml_escape }}</link>
-      </item>
+        <id>{{ item.link }}</id>
+        <updated>{{ item.date | date_to_xmlschema }}</updated>
+        <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title | xml_escape }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        </content>
+        <category term="Courses"/>
+        <published>{{ item.date | date_to_xmlschema }}</published>
+      </entry>
       {% endfor %}
-    {% assign list = site.data.guides | sort: 'date' | reverse %} 
-    {% for topic in list %}
-    {% for topicContent in topic %}
-    {% for item in topicContent[1] %}
-      <item>
+    {% assign list = site.data.guides | sort: 'date' | reverse %}{% for topic in list %}{% for topicContent in topic %}{% for item in topicContent[1] %}
+      <entry>
         <title>{{ item["title"] | xml_escape }}</title>
-        <description>{{ item["description"] | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">Guides</category>
-        <image>
-          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
-          <title>{{ item["title"] | xml_escape }}</title>
-          <link>{{ item["link"] | xml_escape }}</link>
-        </image>
-        <guid>{{ item.link | xml_escape }}</guid>
-        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
-        <link>{{ item["link"] | xml_escape }}</link>
-      </item>
-    {% endfor %}
-    {% endfor %}
-    {% endfor %}
+        <id>{{ item["link"] }}</id>
+        <updated>{{ item.date | date_to_xmlschema }}</updated>
+        <content type="html" xml:lang="en">
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item["title"] | xml_escape }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        </content>
+        <category term="Guides"/>
+        <published>{{ item.date | date_to_xmlschema }}</published>
+      </entry>
+{% endfor %}{% endfor %}{% endfor %}
       {% assign sorted = site.data.newsletters | sort: 'date' | reverse %} 
       {% for item in sorted %}
-      <item>
+      <entry>
         <title>{{ item.title | xml_escape }}</title>
-        <description>{{ item.description | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">Newsletters</category>
-        <image>
-          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
-          <title>{{ item.title | xml_escape }}</title>
-          <link>{{ item.link | xml_escape }}</link>
-        </image>
-        <guid>{{ item.link | xml_escape }}</guid>
-        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
-        <link>{{ item.link | xml_escape }}</link>
-      </item>
+        <id>{{ item.link }}</id>
+        <updated>{{ item.date | date_to_xmlschema }}</updated>
+        <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title | xml_escape }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        </content>
+        <category term="Newsletters"/>
+        <published>{{ item.date | date_to_xmlschema }}</published>
+      </entry>
       {% endfor %}
-  </channel>
-</rss>
+</feed>
