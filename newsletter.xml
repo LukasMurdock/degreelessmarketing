@@ -23,7 +23,7 @@ layout: null
         <description>
         {{ post.content | strip_html | xml_escape }}
         </description>
-        <category domain="https://degreeless.marketing/">books</category>
+        <category domain="https://degreeless.marketing/">Books</category>
         <image>
             <url>https://degreeless.marketing/assets/books/{{ post.image }}</url>
             <title>{{ post.title | xml_escape }}</title>
@@ -40,7 +40,7 @@ layout: null
       <item>
         <title>{{ item.title | xml_escape }}</title>
         <description>{{ item.description | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">podcasts</category>
+        <category domain="https://degreeless.marketing/">Podcasts</category>
         <image>
           <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
           <title>{{ item.title | xml_escape }}</title>
@@ -56,7 +56,7 @@ layout: null
       <item>
         <title>{{ item.title | xml_escape }}</title>
         <description>{{ item.description | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">courses</category>
+        <category domain="https://degreeless.marketing/">Courses</category>
         <image>
           <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
           <title>{{ item.title | xml_escape }}</title>
@@ -74,7 +74,7 @@ layout: null
       <item>
         <title>{{ item["title"] | xml_escape }}</title>
         <description>{{ item["description"] | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">guides</category>
+        <category domain="https://degreeless.marketing/">Guides</category>
         <image>
           <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
           <title>{{ item["title"] | xml_escape }}</title>
@@ -92,7 +92,7 @@ layout: null
       <item>
         <title>{{ item.title | xml_escape }}</title>
         <description>{{ item.description | xml_escape }}</description>
-        <category domain="https://degreeless.marketing/">newsletters</category>
+        <category domain="https://degreeless.marketing/">Newsletters</category>
         <image>
           <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
           <title>{{ item.title | xml_escape }}</title>
