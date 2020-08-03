@@ -6,6 +6,7 @@ description: Purple Cow is part of a collection of books to help you do better m
 image: purple-cow.jpg
 slug: purple-cow
 category: Self-Help
+date: Aug 1, 2020
 link: https://www.google.com/search?q=Purple+Cow+by+Seth+Godin
 links:
 - Buy on Amazon: https://www.amazon.com/Purple-Cow-New-Transform-Remarkable/dp/1591843170

@@ -2,20 +2,24 @@
 - Email Marketing:
   - title: Email Marketing Best Practices
     link: https://lookingformarketing.com/guides/on/email-marketing-best-practices
+    date: Aug 1, 2020
     description: A best practice guide for anyone looking to build or send marketing
       emails.
     image: "/assets/images/resources/email-marketing-best-practices.svg"
   - title: Useful Email Phrases
     link: https://almanac.io/articles/33805/template-150-useful-email-phrases-that-will-make-your-life-easier
+    date: Aug 1, 2020
     description: 150+ useful email phrases that will make your life easier.
     image: "/assets/images/resources/useful-email-phrases.jpeg"
   - title: Link Building Email Template
     link: https://almanac.io/articles/31972/template-22-link-building-emails
+    date: Aug 1, 2020
     description: Guest blogging, resource link, broken link, suggessions, infographic,
       reclaimation, edu, influencer, and more.
     image: "/assets/images/resources/link-building-email-template.jpeg"
   - title: The Email Marketing Strategy Guide
     link: https://www.clickminded.com/email-marketing-strategy/
+    date: Aug 1, 2020
     description: Create massively profitable email marketing & automation campaigns
       for any website.
     image: "/assets/images/resources/the-email-marketing-strategy-guide.png"
@@ -23,29 +27,34 @@
 - Paid Advertising:
   - title: Google Analytics Academy
     link: https://analytics.google.com/analytics/academy/
+    date: Aug 1, 2020
     description: Analytics Academy helps you learn about Google's measurement tools
       so that you can grow your business through intelligent data collection and analysis.
     image: "/assets/images/resources/google-analytics-academy.png"
     radius: false
   - title: Facebook Blueprint
     link: https://www.facebook.com/business/learn
+    date: Aug 1, 2020
     description: Explore self-paced and step-by-step tutorials that can help you build
       your digital marketing knowledge and bring your business online.
     image: "/assets/images/resources/facebook-blueprint.svg"
     radius: false
   - title: Twitter Flight School
     link: https://www.twitterflightschool.com/student/catalog
+    date: Aug 1, 2020
     description: Explore self-paced and step-by-step tutorials that can help you build
       your digital marketing knowledge and bring your business online.
     image: "/assets/images/resources/twitter-flight-school.gif"
     radius: false
   - title: Microsoft Advertising Learning Lab
     link: https://learninglab.about.ads.microsoft.com/
+    date: Aug 1, 2020
     description: Your place for all Microsoft Advertising training.
     image: "/assets/images/resources/microsoft-advertising-learning-lab.png"
     radius: false
   - title: The Digital Advertising Strategy Guide
     link: https://www.clickminded.com/digital-advertising-strategy/
+    date: Aug 1, 2020
     description: Create massively profitable Facebook & Adwords campaigns for any
       website.
     image: "/assets/images/resources/the-digital-advertising-strategy-guide.png"
@@ -53,22 +62,26 @@
 - Search Engine Optimization:
   - title: Common Sense SEO Checklist
     link: https://css-tricks.com/common-sense-seo-checklist/
+    date: Aug 1, 2020
     description: Set aside all the fancy technical stuff and just use some good ol’
       common sense.
     image: "/assets/images/resources/common-sense-seo-checklist.jpeg"
   - title: Comprehensive SEO Audit Checklist
     link: https://www.iqseo.org/seo-audit-checklist/
+    date: Aug 1, 2020
     description: See 200+ audit points and the tools you need to gather them.
     image: "/assets/images/resources/comprehensive-seo-audit-checklist.png"
     radius: false
   - title: The SEO Strategy Guide
     link: https://www.clickminded.com/seo-strategy/
+    date: Aug 1, 2020
     description: Massively increase traffic and sales from search engines to any website.
     image: "/assets/images/resources/the-seo-strategy-guide.png"
     radius: false
 - Social Media Marketing:
   - title: The Social Media Strategy Guide
     link: https://www.clickminded.com/social-media-marketing-strategy/
+    date: Aug 1, 2020
     description: Create massively profitable social media marketing campaigns for
       any website.
     image: "/assets/images/resources/the-social-media-strategy-guide.png"
@@ -76,22 +89,26 @@
 - Content Marketing:
   - title: The Content Marketing Handbook
     link: https://priceonomics.com/the-content-marketing-handbook/
+    date: Aug 1, 2020
     description: Over 30,000 words about how to write about information and make it
       spread.
     image: "/assets/images/resources/the-content-marketing-handbook.png"
     radius: false
   - title: Writing SEO-Friendly Content
     link: https://www.manaferra.com/how-to-write-seo-friendly-content/
+    date: Aug 1, 2020
     description: A guide that shows you every step of how to write SEO-friendly content.
     image: "/assets/images/resources/writing-seo-friendly-content.jpeg"
   - title: The Content Marketing Strategy Guide
     link: https://www.clickminded.com/content-marketing-strategy/
+    date: Aug 1, 2020
     description: Create a massively profitable content strategy for any website.
     image: "/assets/images/resources/the-content-marketing-strategy-guide.png"
     radius: false
 - Web Analytics:
   - title: The Web Analytics Strategy Guide
     link: https://www.clickminded.com/website-analytics-strategy/
+    date: Aug 1, 2020
     description: Massively increase sales on any website with a powerful analytics
       strategy.
     image: "/assets/images/resources/the-web-analytics-strategy-guide.png"
@@ -99,6 +116,7 @@
 - Sales Funnels:
   - title: The Sales Funnel Strategy Guide
     link: https://www.clickminded.com/sales-funnel-strategy/
+    date: Aug 1, 2020
     description: Massively increase conversions and sales on any website with powerful
       sales funnels.
     image: "/assets/images/resources/the-sales-funnel-strategy-guide.png"

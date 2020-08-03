@@ -6,6 +6,7 @@ description: Good To Great is part of a collection of books to help you do bette
   marketing.
 slug: good-to-great
 category: Business
+date: Aug 1, 2020
 image: good-to-great.jpg
 link: https://www.google.com/search?q=Good+To+Great+by+James+Charles+Collins%2C+Jim+Collins
 links:

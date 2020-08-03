@@ -5,6 +5,7 @@ author: Robert B. Cialdini
 description: Influence is part of a collection of books to help you do better marketing.
 category: Self-Help
 image: influence.jpg
+date: Aug 1, 2020
 slug: influence
 link: https://www.google.com/search?q=Influence+by+Robert+B.+Cialdini
 links:

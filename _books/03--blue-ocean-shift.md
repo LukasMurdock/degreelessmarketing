@@ -6,6 +6,7 @@ description: Blue Ocean Shift is part of a collection of books to help you do be
   marketing.
 slug: blue-ocean-shift
 category: Business & Economics
+date: Aug 1, 2020
 image: blue-ocean-shift.jpg
 link: https://www.google.com/search?q=Blue+Ocean+Shift+by+W.+Chan+Kim%2C+Renee+Mauborgne
 links:

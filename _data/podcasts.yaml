@@ -1,16 +1,19 @@
 
 - title: Akimbo
   link: https://www.akimbo.link/
+  date: Aug 1, 2020
   description: A podcast about our culture and about how we can change it. About seeing
     what's happening and choosing to do something.
   image: "/assets/images/resources/akimbo.png"
 - title: Search Off the Record
   link: https://developers.google.com/search/podcasts/search-off-the-record
+  date: Aug 1, 2020
   description: Take a peek behind the scenes of Google Search and its inner workings
     with the folks from the Search Relations team.
   image: "/assets/images/resources/search-off-the-record.svg"
 - title: Adventures in Local Marketing
   link: https://www.brightlocal.com/podcast/
+  date: Aug 1, 2020
   description: A BrightLocal podcast that tells the stories from the front line of
     local marketing.
   image: "/assets/images/resources/adventures-in-local-marketing.svg"

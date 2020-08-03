@@ -6,6 +6,7 @@ description: Blue Ocean Strategy is part of a collection of books to help you do
   marketing.
 slug: blue-ocean-strategy
 category: Business & Economics
+date: Aug 1, 2020
 image: blue-ocean-strategy.jpg
 link: https://www.google.com/search?q=Blue+Ocean+Strategy+by+W.+Chan+Kim%2C+Ren%C3%A9e+Mauborgne
 links:
