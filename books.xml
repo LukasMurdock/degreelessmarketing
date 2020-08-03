@@ -1,0 +1,45 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+  <channel>
+    <title>{{ site.title | xml_escape }} Books</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ "/books" | prepend: site.baseurl | prepend: site.url }}</link>
+    <webfeeds:icon>https://degreeless.marketing/safari-pinned-tab.svg</webfeeds:icon>
+    <webfeeds:logo>https://degreeless.marketing/safari-pinned-tab.svg</webfeeds:logo>
+    <webfeeds:accentColor>da532c</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
+    <atom:link href="{{ "/books.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+{% assign timeframe = 604800 %}
+          {% for post in site.books %}
+            {% assign post_in_seconds = post.date | date: "%s" | plus: 0 %}
+              {% assign recent_posts = "now" | date: "%s" | minus: timeframe  %}
+              {% if post_in_seconds > recent_posts %}
+
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>
+                &lt;h3&gt;{{ post.title | xml_escape }}&lt;/h3&gt;
+                &lt;a href=&quot;{{ link[1] }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;color:#3399ff&quot;&gt;{{ link[0] }}&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;#ffffff&quot; fill=&quot;none&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M0 0h24v24H0z&quot; stroke=&quot;none&quot;/&gt;&lt;path d=&quot;M5 12h14M13 18l6-6M13 6l6 6&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;
+        {{ post.content | xml_escape }}
+        </description>
+        <image>
+          <url>https://degreeless.marketing/assets/books/{{ post.image }}</url>
+          <title>{{ post.title | xml_escape }}</title>
+          <link>https://degreeless.marketing/books/{{ post.slug }}</link>
+        </image>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>https://degreeless.marketing/books/{{ post.slug }}</link>
+      </item>
+
+              {% endif %}
+      {% endfor %}
+
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 layout: onecolumn
 title: Contact
-description: Say hello and introduce yourself.
+description: Submit a new resource or just say hello and introduce yourself.
 ---
 
 ## Who made this?

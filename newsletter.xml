@@ -11,7 +11,7 @@ layout: null
     <webfeeds:logo>https://degreeless.marketing/safari-pinned-tab.svg</webfeeds:logo>
     <webfeeds:accentColor>da532c</webfeeds:accentColor>
     <webfeeds:related layout="card" target="browser"/>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <atom:link href="{{ "/newsletter.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
@@ -21,12 +21,18 @@ layout: null
       <item>
         <title>Books</title>
         <description>
+        &lt;a href=&apos;{{ "/books" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Books&lt;/u&gt;&lt;/a&gt;
+        &lt;br &gt;&lt;br &gt;
           {% for post in site.books %}
             {% assign post_in_seconds = post.date | date: "%s" | plus: 0 %}
               {% assign recent_posts = "now" | date: "%s" | minus: timeframe  %}
               {% if post_in_seconds > recent_posts %}
-        &lt;h2&gt;{{ post.title | xml_escape }}&lt;/h2&gt;
-        &lt;a href=&apos;{{ post.url | prepend: site.baseurl | prepend: site.url | xml_escape }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View in Browser&lt;/u&gt;&lt;/a&gt;
+                &lt;h3&gt;{{ post.title | xml_escape }}&lt;/h3&gt;
+                {% for link_hash in post.links %}
+                {% for link in link_hash %}
+                &lt;a href=&quot;{{ link[1] }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;color:#3399ff&quot;&gt;{{ link[0] }}&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;#ffffff&quot; fill=&quot;none&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M0 0h24v24H0z&quot; stroke=&quot;none&quot;/&gt;&lt;path d=&quot;M5 12h14M13 18l6-6M13 6l6 6&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;
+                {% endfor %}
+                {% endfor %}
         &lt;br /&gt;
         {{ post.content | xml_escape }}
         &lt;hr&gt;
@@ -37,6 +43,26 @@ layout: null
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         {% endfor %}
         <link>{{ "/books" | prepend: site.baseurl | prepend: site.url }}</link>
+      </item>
+
+      <item>
+        <title>Books</title>
+        <description>
+        &lt;a href=&apos;{{ "/books" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Books&lt;/u&gt;&lt;/a&gt;
+        &lt;br &gt;&lt;br &gt;
+        {% assign sorted = site.data.courses | sort: 'date' | reverse %} 
+        {% for item in sorted %}
+                &lt;a href=&apos;{{ item.link | xml_escape }}&apos; target=&apos;_blank&apos;&gt;&lt;strong&gt;&lt;u&gt;{{ item.title | xml_escape }} →&lt;/u&gt;&lt;/strong&gt;&lt;/a&gt;
+                &lt;br /&gt;
+                {{ item.description | xml_escape }}
+                &lt;br /&gt;
+                &lt;hr&gt;
+        {% endfor %}
+        </description>
+        {% for recent in sorted limit:1 %}
+        <pubDate>{{ recent.date | date_to_rfc822 }}</pubDate>
+        {% endfor %}
+        <link>{{ "/courses" | prepend: site.baseurl | prepend: site.url }}</link>
       </item>
 
       <item>
