@@ -16,146 +16,93 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 
     <generator>Jekyll v{{ jekyll.version }}</generator>
-{% assign timeframe = 604800 %}
 
-      <item>
-        <title>Books</title>
+    {% for post in site.books %}
+        <item>
+        <title>{{ post.title | xml_escape }}</title>
         <description>
-        &lt;a href=&apos;{{ "/books" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Books&lt;/u&gt;&lt;/a&gt;
-        &lt;br &gt;&lt;br &gt;
-          {% for post in site.books %}
-            {% assign post_in_seconds = post.date | date: "%s" | plus: 0 %}
-              {% assign recent_posts = "now" | date: "%s" | minus: timeframe  %}
-              {% if post_in_seconds > recent_posts %}
-                &lt;h3&gt;{{ post.title | xml_escape }}&lt;/h3&gt;
-                {% for link_hash in post.links %}
-                {% for link in link_hash %}
-                &lt;a href=&quot;{{ link[1] }}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; style=&quot;color:#3399ff&quot;&gt;{{ link[0] }}&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;1.5&quot; stroke=&quot;#ffffff&quot; fill=&quot;none&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path d=&quot;M0 0h24v24H0z&quot; stroke=&quot;none&quot;/&gt;&lt;path d=&quot;M5 12h14M13 18l6-6M13 6l6 6&quot;/&gt;&lt;/svg&gt;&lt;/a&gt;
-                {% endfor %}
-                {% endfor %}
-        &lt;br /&gt;
-        {{ post.content | xml_escape }}
-        &lt;hr&gt;
-          {% endif %}
-        {% endfor %}
+        {{ post.content | strip_html | xml_escape }}
         </description>
-        {% for post in site.posts limit:1 %}
+        <category domain="https://degreeless.marketing/">books</category>
+        <image>
+            <url>https://degreeless.marketing/assets/books/{{ post.image }}</url>
+            <title>{{ post.title | xml_escape }}</title>
+            <link>https://degreeless.marketing/books/{{ post.slug }}</link>
+        </image>
+        <guid>https://degreeless.marketing/books/{{ post.slug }}</guid>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        {% endfor %}
-        <link>{{ "/books" | prepend: site.baseurl | prepend: site.url }}</link>
-      </item>
+        <link>https://degreeless.marketing/books/{{ post.slug }}</link>
+        </item>
+    {% endfor %}
 
+    {% assign sorted = site.data.podcasts | sort: 'date' | reverse %} 
+      {% for item in sorted %}
       <item>
-        <title>Books</title>
-        <description>
-        &lt;a href=&apos;{{ "/books" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Books&lt;/u&gt;&lt;/a&gt;
-        &lt;br &gt;&lt;br &gt;
-        {% assign sorted = site.data.courses | sort: 'date' | reverse %} 
-        {% for item in sorted %}
-                &lt;a href=&apos;{{ item.link | xml_escape }}&apos; target=&apos;_blank&apos;&gt;&lt;strong&gt;&lt;u&gt;{{ item.title | xml_escape }} →&lt;/u&gt;&lt;/strong&gt;&lt;/a&gt;
-                &lt;br /&gt;
-                {{ item.description | xml_escape }}
-                &lt;br /&gt;
-                &lt;hr&gt;
-        {% endfor %}
-        </description>
-        {% for recent in sorted limit:1 %}
-        <pubDate>{{ recent.date | date_to_rfc822 }}</pubDate>
-        {% endfor %}
-        <link>{{ "/courses" | prepend: site.baseurl | prepend: site.url }}</link>
+        <title>{{ item.title | xml_escape }}</title>
+        <description>{{ item.description | xml_escape }}</description>
+        <category domain="https://degreeless.marketing/">podcasts</category>
+        <image>
+          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
+          <title>{{ item.title | xml_escape }}</title>
+          <link>{{ item.link | xml_escape }}</link>
+        </image>
+        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+        <link>{{ item.link | xml_escape }}</link>
       </item>
+      {% endfor %}
 
+      {% assign sorted = site.data.courses | sort: 'date' | reverse %} 
+      {% for item in sorted %}
       <item>
-        <title>Podcasts</title>
-        <description>
-        &lt;a href=&apos;{{ "/podcasts" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Podcasts&lt;/u&gt;&lt;/a&gt;
-        &lt;br &gt;&lt;br &gt;
-
-        {% assign sorted = site.data.podcasts | sort: 'date' | reverse %} 
-        {% for item in sorted %}
-                &lt;a href=&apos;{{ item.link | xml_escape }}&apos; target=&apos;_blank&apos;&gt;&lt;strong&gt;&lt;u&gt;{{ item.title | xml_escape }} →&lt;/u&gt;&lt;/strong&gt;&lt;/a&gt;
-                &lt;br /&gt;
-                {{ item.description | xml_escape }}
-                &lt;br /&gt;
-                &lt;hr&gt;
-        {% endfor %}
-        </description>
-        {% for recent in sorted limit:1 %}
-        <pubDate>{{ recent.date | date_to_rfc822 }}</pubDate>
-        {% endfor %}
-        <link>{{ "/podcasts" | prepend: site.baseurl | prepend: site.url }}</link>
+        <title>{{ item.title | xml_escape }}</title>
+        <description>{{ item.description | xml_escape }}</description>
+        <category domain="https://degreeless.marketing/">courses</category>
+        <image>
+          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
+          <title>{{ item.title | xml_escape }}</title>
+          <link>{{ item.link | xml_escape }}</link>
+        </image>
+        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+        <link>{{ item.link | xml_escape }}</link>
       </item>
+      {% endfor %}
 
-
+    {% assign list = site.data.guides | sort: 'date' | reverse %} 
+    {% for topic in list %}
+    {% for topicContent in topic %}
+    {% for item in topicContent[1] %}
       <item>
-        <title>Courses</title>
-        <description>
-        &lt;a href=&apos;{{ "/courses" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Courses&lt;/u&gt;&lt;/a&gt;
-        &lt;br &gt;&lt;br &gt;
-
-        {% assign sorted = site.data.courses | sort: 'date' | reverse %} 
-        {% for item in sorted %}
-                &lt;a href=&apos;{{ item.link | xml_escape }}&apos; target=&apos;_blank&apos;&gt;&lt;strong&gt;&lt;u&gt;{{ item.title | xml_escape }} →&lt;/u&gt;&lt;/strong&gt;&lt;/a&gt;
-                &lt;br /&gt;
-                {{ item.description | xml_escape }}
-                &lt;br /&gt;
-                &lt;hr&gt;
-        {% endfor %}
-        </description>
-        {% for recent in sorted limit:1 %}
-        <pubDate>{{ recent.date | date_to_rfc822 }}</pubDate>
-        {% endfor %}
-        <link>{{ "/courses" | prepend: site.baseurl | prepend: site.url }}</link>
+        <title>{{ item["title"] | xml_escape }}</title>
+        <description>{{ item["description"] | xml_escape }}</description>
+        <category domain="https://degreeless.marketing/">guides</category>
+        <image>
+          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
+          <title>{{ item["title"] | xml_escape }}</title>
+          <link>{{ item["link"] | xml_escape }}</link>
+        </image>
+        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+        <link>{{ item["link"] | xml_escape }}</link>
       </item>
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
 
-
-
+      {% assign sorted = site.data.newsletters | sort: 'date' | reverse %} 
+      {% for item in sorted %}
       <item>
-        <title>Guides</title>
-        <description>
-        &lt;a href=&apos;{{ "/guides" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Guides&lt;/u&gt;&lt;/a&gt;
-        &lt;br &gt;&lt;br &gt;
-
-        {% assign list = site.data.guides | sort: 'date' | reverse %} 
-        {% for topic in list %}
-            {% for topicContent in topic %}
-                {% for item in topicContent[1] %}
-                    &lt;a href=&apos;{{ item["link"] | xml_escape }}&apos; target=&apos;_blank&apos;&gt;&lt;strong&gt;&lt;u&gt;{{ item["title"] | xml_escape }} →&lt;/u&gt;&lt;/strong&gt;&lt;/a&gt;
-                    &lt;br /&gt;
-                    {{ item["description"] | xml_escape }}
-                    &lt;br /&gt;
-                    &lt;hr&gt;
-                {% endfor %}
-            {% endfor %}
-        {% endfor %}
-        </description>
-        {% for recent in sorted limit:1 %}
-        <pubDate>{{ recent.date | date_to_rfc822 }}</pubDate>
-        {% endfor %}
-        <link>{{ "/guides" | prepend: site.baseurl | prepend: site.url }}</link>
+        <title>{{ item.title | xml_escape }}</title>
+        <description>{{ item.description | xml_escape }}</description>
+        <category domain="https://degreeless.marketing/">newsletters</category>
+        <image>
+          <url>https://degreeless.marketing/assets/resources{{ item.image }}</url>
+          <title>{{ item.title | xml_escape }}</title>
+          <link>{{ item.link | xml_escape }}</link>
+        </image>
+        <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+        <link>{{ item.link | xml_escape }}</link>
       </item>
+      {% endfor %}
 
-
-     <item>
-        <title>Newsletters</title>
-        <description>
-        &lt;a href=&apos;{{ "/newsletters" | prepend: site.baseurl | prepend: site.url }}&apos; target=&apos;_blank&apos; style=&apos;color:#3399ff&apos;&gt;&lt;u&gt;View all Newsletters&lt;/u&gt;&lt;/a&gt;
-        &lt;br &gt;&lt;br &gt;
-
-        {% assign sorted = site.data.newsletters | sort: 'date' | reverse %} 
-        {% for item in sorted %}
-                &lt;a href=&apos;{{ item.link | xml_escape }}&apos; target=&apos;_blank&apos;&gt;&lt;strong&gt;&lt;u&gt;{{ item.title | xml_escape }} →&lt;/u&gt;&lt;/strong&gt;&lt;/a&gt;
-                &lt;br /&gt;
-                {{ item.description | xml_escape }}
-                &lt;br /&gt;
-                &lt;hr&gt;
-        {% endfor %}
-        </description>
-        {% for recent in sorted limit:1 %}
-        <pubDate>{{ recent.date | date_to_rfc822 }}</pubDate>
-        {% endfor %}
-        <link>{{ "/courses" | prepend: site.baseurl | prepend: site.url }}</link>
-      </item>
 
   </channel>
 </rss>
