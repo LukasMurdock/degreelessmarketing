@@ -35,7 +35,6 @@ layout: null
         <link>https://degreeless.marketing/books/{{ post.slug }}</link>
         </item>
     {% endfor %}
-
     {% assign sorted = site.data.podcasts | sort: 'date' | reverse %} 
       {% for item in sorted %}
       <item>
@@ -52,7 +51,6 @@ layout: null
         <link>{{ item.link | xml_escape }}</link>
       </item>
       {% endfor %}
-
       {% assign sorted = site.data.courses | sort: 'date' | reverse %} 
       {% for item in sorted %}
       <item>
@@ -69,7 +67,6 @@ layout: null
         <link>{{ item.link | xml_escape }}</link>
       </item>
       {% endfor %}
-
     {% assign list = site.data.guides | sort: 'date' | reverse %} 
     {% for topic in list %}
     {% for topicContent in topic %}
@@ -90,7 +87,6 @@ layout: null
     {% endfor %}
     {% endfor %}
     {% endfor %}
-
       {% assign sorted = site.data.newsletters | sort: 'date' | reverse %} 
       {% for item in sorted %}
       <item>
