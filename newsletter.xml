@@ -46,6 +46,7 @@ layout: null
           <title>{{ item.title | xml_escape }}</title>
           <link>{{ item.link | xml_escape }}</link>
         </image>
+        <guid>{{ item.link | xml_escape }}</guid>
         <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
         <link>{{ item.link | xml_escape }}</link>
       </item>
@@ -62,6 +63,7 @@ layout: null
           <title>{{ item.title | xml_escape }}</title>
           <link>{{ item.link | xml_escape }}</link>
         </image>
+        <guid>{{ item.link | xml_escape }}</guid>
         <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
         <link>{{ item.link | xml_escape }}</link>
       </item>
@@ -80,6 +82,7 @@ layout: null
           <title>{{ item["title"] | xml_escape }}</title>
           <link>{{ item["link"] | xml_escape }}</link>
         </image>
+        <guid>{{ item.link | xml_escape }}</guid>
         <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
         <link>{{ item["link"] | xml_escape }}</link>
       </item>
@@ -98,11 +101,10 @@ layout: null
           <title>{{ item.title | xml_escape }}</title>
           <link>{{ item.link | xml_escape }}</link>
         </image>
+        <guid>{{ item.link | xml_escape }}</guid>
         <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
         <link>{{ item.link | xml_escape }}</link>
       </item>
       {% endfor %}
-
-
   </channel>
 </rss>
