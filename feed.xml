@@ -30,7 +30,7 @@ layout: null
         <id>https://degreeless.marketing/books/{{ post.slug }}</id>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
-        <![CDATA[<a href="https://degreeless.marketing/books/{{ post.slug }}"><img alt="{{ post.title }}" src="https://degreeless.marketing/assets/books/{{ post.image }}" /></a>]]>{{ post.content | strip_html | escape }}
+        <![CDATA[<a href="https://degreeless.marketing/books/{{ post.slug }}"><img alt="{{ post.title }}" src="https://degreeless.marketing/assets/images/books/{{ post.image }}" /></a>]]>{{ post.content | strip_html | escape }}
         </content>
         <category term="Books"/>
         <published>{{ post.date | date_to_xmlschema }}</published>
@@ -44,7 +44,7 @@ layout: null
         <id>{{ item.link }}</id>
         <updated>{{ item.date | date_to_xmlschema }}</updated>
         <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
-        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title }}" src="https://degreeless.marketing/assets/images/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
         </content>
         <category term="Podcasts"/>
         <published>{{ item.date | date_to_xmlschema }}</published>
@@ -58,7 +58,7 @@ layout: null
         <id>{{ item.link }}</id>
         <updated>{{ item.date | date_to_xmlschema }}</updated>
         <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
-        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title | xml_escape }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title | xml_escape }}" src="https://degreeless.marketing/assets/images/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
         </content>
         <category term="Courses"/>
         <published>{{ item.date | date_to_xmlschema }}</published>
@@ -70,7 +70,7 @@ layout: null
         <id>{{ item["link"] }}</id>
         <updated>{{ item.date | date_to_xmlschema }}</updated>
         <content type="html" xml:lang="en">
-        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item["title"] | xml_escape }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item["title"] | xml_escape }}" src="https://degreeless.marketing/assets/images/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
         </content>
         <category term="Guides"/>
         <published>{{ item.date | date_to_xmlschema }}</published>
@@ -83,7 +83,7 @@ layout: null
         <id>{{ item.link }}</id>
         <updated>{{ item.date | date_to_xmlschema }}</updated>
         <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
-        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title | xml_escape }}" src="https://degreeless.marketing/assets/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
+        <![CDATA[<a href="{{ item.link | xml_escape }}"><img alt="{{ item.title | xml_escape }}" src="https://degreeless.marketing/assets/images/resources{{ item.image }}" /></a>]]>{{ item.description | escape }}
         </content>
         <category term="Newsletters"/>
         <published>{{ item.date | date_to_xmlschema }}</published>
