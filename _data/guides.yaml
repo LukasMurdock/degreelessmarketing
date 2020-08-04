@@ -121,3 +121,9 @@
       sales funnels.
     image: "/assets/images/resources/the-sales-funnel-strategy-guide.png"
     radius: false
+- Design:
+  - title: The Guide to Design
+    link: https://start.uxdesign.cc/
+    date: Aug 1, 2020
+    description: A self-guided class to help you get started in UX and answer key questions about craft, design, and career.
+    image: "/assets/images/resources/the-guide-to-design.jpg"
