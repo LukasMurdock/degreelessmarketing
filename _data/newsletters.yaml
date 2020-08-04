@@ -55,3 +55,9 @@
   description: Join 95,000+ analysts, optimizers, digital marketers, and UX practitioners with emails on growth and optimization.
   image: "/assets/images/resources/cxl-newsletter.svg"
   radius: false
+- title: Marketing Examples
+  link: https://marketingexamples.com/
+  date: Aug 1, 2020
+  description: A gallery of real world marketing examples from successful companies. It's like Dribbble, but for marketers.
+  image: "/assets/images/resources/marketingexamples.svg"
+  radius: false
