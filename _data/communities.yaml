@@ -1,0 +1,42 @@
+---
+- title: Traffic Think Tank
+  link: https://trafficthinktank.com/
+  date: Aug 1, 2020
+  description: Your personal training ground. The mastermind is your private sounding
+    board. Together, they help you level up like you're using cheat codes.
+  image: "/assets/images/resources/traffic-think-tank.png"
+  radius: false
+- title: Online Geniuses
+  link: https://onlinegeniuses.com/
+  date: Aug 4, 2020
+  description: Talk with like-minded folks in the digital marketing + SEO space via
+    Slack.
+  image: "/assets/images/resources/online-geniuses.png"
+  radius: false
+- title: Buffer Community
+  link: https://buffer.com/community
+  date: Aug 4, 2020
+  description: You’re working hard to build your brand — Buffer users can help you
+    along the way.
+  image: "/assets/images/resources/buffer-community.svg"
+  radius: false
+- title: Reddit Marketing Community
+  link: https://www.reddit.com/r/marketing/#IdCard--CakeDay--undefined--t5_2qhmg:~:text=The%20Reddit%20Marketing%20Community
+  date: Aug 4, 2020
+  description: A diverse community that includes brands, businesses, agencies, vendors,
+    and students.
+  image: "/assets/images/resources/email-marketing-best-practices.svg"
+- title: Growth Hackers
+  link: https://growthhackers.com/
+  date: Aug 4, 2020
+  description: High quality trending articles on growth hacking, marketing channels,
+    user acquisition, engagement, product launch and more.
+  image: "/assets/images/resources/growth-hackers.jpg"
+  radius: false
+- title: Indie Hackers
+  link: https://www.indiehackers.com/
+  date: Aug 4, 2020
+  description: Connect with developers who are sharing the strategies and revenue
+    numbers behind their companies and side projects.
+  image: "/assets/images/resources/indie-hackers.svg"
+  radius: false
