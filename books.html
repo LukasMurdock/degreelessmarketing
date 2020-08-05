@@ -5,7 +5,8 @@ description: A collection of books to help you do better marketing. Each one is 
 ---
 
 <div class="allBooks">
-    {% for book in site.books %}
+    {% assign sorted = site.books | sort: 'relative_path' %}
+    {% for book in sorted %}
     <div class="bookContainer">
         <div class="bookImageContainer">
             <img loading="lazy" src="/assets/images/books/{{book.image}}" alt="{{ book.title }} image">

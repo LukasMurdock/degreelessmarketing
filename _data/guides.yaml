@@ -78,6 +78,12 @@
     description: Massively increase traffic and sales from search engines to any website.
     image: "/assets/images/resources/the-seo-strategy-guide.png"
     radius: false
+  - title: Logfile Analysis
+    link: https://suganthan.com/blog/logfile-analysis-seo/
+    date: Aug 4, 2020
+    description: How to do advanced logfile analysis using Cloudflare, Logflare, Bigquery and Google data studio.
+    image: "/assets/images/resources/suganthan.png"
+    radius: false
 - Social Media Marketing:
   - title: The Social Media Strategy Guide
     link: https://www.clickminded.com/social-media-marketing-strategy/
