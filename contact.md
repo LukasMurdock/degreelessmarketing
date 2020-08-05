@@ -14,7 +14,7 @@ You can find my website at [lukasmurdock.com](https://lukasmurdock.com/)
 ## Your turn
 I love getting to know people around the world.
 
-If you have a resource to add or a comment, please don’t hold back.
+If you have a resource, suggestion, or a comment, please don’t hold back.
 
 Life is short, hit send.
 
