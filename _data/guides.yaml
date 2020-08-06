@@ -60,6 +60,11 @@
     image: "/assets/images/resources/the-digital-advertising-strategy-guide.png"
     radius: false
 - Search Engine Optimization:
+  - title: Google Search
+    link: https://developers.google.com/search
+    date: Aug 5, 2020
+    description: A guide to reaching more people through Google Search.
+    image: "/assets/images/resources/google-g.svg"
   - title: Common Sense SEO Checklist
     link: https://css-tricks.com/common-sense-seo-checklist/
     date: Aug 1, 2020
