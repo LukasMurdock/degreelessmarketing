@@ -1,7 +1,7 @@
 ---
 - title: TL;DR Marketing
   link: https://tldrmarketing.com/
-  date: Aug 1, 2020 
+  date: Aug 1, 2020
   description: Get the latest breaking news and trends about paid media and digital
     marketing.
   image: "/assets/images/resources/tldr-marketing.jpg"
@@ -30,6 +30,13 @@
   description: The daily email that makes reading the news actually enjoyable.
   image: "/assets/images/resources/morning-brew.png"
   radius: false
+- title: Marketing Brew
+  link: https://www.morningbrew.com/marketing/
+  date: Aug 6, 2020
+  description: The email newsletter guaranteed to bring you the latest stories shaping
+    the marketing and advertising world, like only the Brew can.
+  image: "/assets/images/resources/marketing-brew.png"
+  radius: false
 - title: Visual Capitalist
   link: https://www.visualcapitalist.com/
   date: Aug 1, 2020
@@ -52,12 +59,14 @@
 - title: CXL newsletter
   link: https://cxl.com/newsletter/
   date: Aug 1, 2020
-  description: Join 95,000+ analysts, optimizers, digital marketers, and UX practitioners with emails on growth and optimization.
+  description: Join 95,000+ analysts, optimizers, digital marketers, and UX practitioners
+    with emails on growth and optimization.
   image: "/assets/images/resources/cxl-newsletter.svg"
   radius: false
 - title: Marketing Examples
   link: https://marketingexamples.com/
   date: Aug 1, 2020
-  description: A gallery of real world marketing examples from successful companies. It's like Dribbble, but for marketers.
+  description: A gallery of real world marketing examples from successful companies.
+    It's like Dribbble, but for marketers.
   image: "/assets/images/resources/marketingexamples.svg"
   radius: false
