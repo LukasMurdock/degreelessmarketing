@@ -92,9 +92,9 @@ for item in dataYaml do
       # Check for images not locally hosted within guides.yaml
         # p item.values[0][1]
         for type in item.values[0] do
-          if type.values[3].include? "http" then
+          if type.values[4].include? "http" then
             image_title = type.values[0].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-            image_url = type.values[3]
+            image_url = type.values[4]
             file_ext = File.extname(image_url) 
             p "Downloading #{image_url} for #{type.values[0]}"
 

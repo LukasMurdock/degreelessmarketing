@@ -60,6 +60,13 @@
     image: "/assets/images/resources/the-digital-advertising-strategy-guide.png"
     radius: false
 - Search Engine Optimization:
+  - title: SEOslides.page
+    link: https://seoslides.page/
+    date: Aug 11, 2020
+    description: A collaborative index of digital marketing conference slides,
+      video, and audio recordings.
+    image: "/assets/images/resources/seoslidespage.svg"
+    radius: false
   - title: Google Search
     link: https://developers.google.com/search
     date: Aug 5, 2020
@@ -86,7 +93,8 @@
   - title: Logfile Analysis
     link: https://suganthan.com/blog/logfile-analysis-seo/
     date: Aug 4, 2020
-    description: How to do advanced logfile analysis using Cloudflare, Logflare, Bigquery and Google data studio.
+    description: How to do advanced logfile analysis using Cloudflare, Logflare, Bigquery
+      and Google data studio.
     image: "/assets/images/resources/suganthan.png"
     radius: false
 - Social Media Marketing:
@@ -136,5 +144,6 @@
   - title: The Guide to Design
     link: https://start.uxdesign.cc/
     date: Aug 1, 2020
-    description: A self-guided class to help you get started in UX and answer key questions about craft, design, and career.
+    description: A self-guided class to help you get started in UX and answer key
+      questions about craft, design, and career.
     image: "/assets/images/resources/the-guide-to-design.jpg"
