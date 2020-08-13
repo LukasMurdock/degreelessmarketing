@@ -72,3 +72,9 @@
   date: Aug 1, 2020
   description: Courses & Resources for creative professionals of all levels.
   image: "/assets/images/resources/the-futur.jpg"
+- title: Pluralsight
+  link: https://www.pluralsight.com/
+  date: Aug 12, 2020
+  description: The tech skills platform that provides web development, IT certification and online training that helps you move forward with the right technology and the right skills.
+  image: "/assets/images/resources/pluralsight.png"
+  radius: false
