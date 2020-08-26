@@ -70,3 +70,9 @@
     It's like Dribbble, but for marketers.
   image: "/assets/images/resources/marketingexamples.svg"
   radius: false
+- title: Very Good Copy
+  link: https://www.verygoodcopy.com/
+  date: Aug 26, 2020
+  description: Micro-articles about copywriting, content marketing, and psychology.
+  image: "/assets/images/resources/very-good-copy.png"
+  radius: false
