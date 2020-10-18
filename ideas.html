@@ -1,0 +1,26 @@
+---
+layout: default
+title: Marketing Ideas
+description: A collection of marketing ideas to help you do better marketing.
+---
+
+<div class="allBooks">
+
+    
+        <div class="heroText">
+            <!-- <h2>How to start marketing</h2>
+            <ol>
+                <li>Understand what change you’re seeking to make</li>
+                <li>Find ways to make that change happen</li>
+            </ol> -->
+            <h2>What change are you seeking to make?</h2>
+        </div>
+
+        {% assign sorted = site.categories | reverse %}
+        {% for category in sorted %}
+        <div class="itemContainer linkCard">
+                <h2 class="ideaSplitLink"><a href="{{category.url | downcase }}">I want to grow <span class="svgAlign"><span style="color:{{ category.color }};background-color:{{ category.color }}33">{{ category.title }}</span><svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="{{ category.color }}" d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z" /></svg></a></span></h2>
+                <p>{{counter}}</p>
+        </div>
+        {% endfor %}
+</div>

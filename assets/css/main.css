@@ -48,6 +48,27 @@ margin-bottom: 15px;
 text-align: left;
 }
 
+.post > *:not(img):not(video):not(figure) {
+    position: relative;
+    max-width: 450px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.post > p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    /* padding-top: 30px; */
+    padding-bottom: 15px;
+}
+
+.post img {
+    margin: auto;
+    display: block;
+    max-width:100%;
+}
+
 .heroButton {
 display: inline-flex;
 align-items: center;
@@ -316,6 +337,20 @@ line-height: 1.6;
     background-color: #ffffff;
 }
 
+.ideaCategories h2 a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ideaSplitLink .svgAlign {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
 .itemContainer img {
     border-radius: 100%;
     max-width: 100%;
@@ -331,6 +366,30 @@ line-height: 1.6;
 
 .itemContainer p {
     margin: 0;
+}
+
+.linkCard {
+    min-height: auto;
+    position: relative;
+    /* border: .5px solid #DD3532; */
+}
+
+.linkCard:focus-within, .linkCard:hover {
+    background-color: #DD353233;
+}
+
+.linkCard a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.linkCard a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .allBooks {

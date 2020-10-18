@@ -1,0 +1,6 @@
+{% for category_template in site.categories %}
+    {% if category == category_template.title %}
+    <a href="{{category_template.title | downcase}}" class="headerCaption" style="margin-top: 4px;display: inline-block;text-decoration:none; padding: 4px 12px; border-radius: 24px; color:{{ category_template.color }}; background-color: {{ category_template.color }}33">{{category}}</a>
+    <!-- display: inline-block;text-decoration:none; padding: 12px 24px; border-radius: 12px; color:{{ category_template.color }}; background-color: {{ category_template.color }}33">{{category}}</a> -->
+    {% endif %}
+{% endfor %}

@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% seo %}
-    <meta property="og:type" content="article" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#12104C">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#ffffff">
-</head>
+    {% include head.html %}
 
 <body class="pagebody">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG84T4Q"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    {% include header.html %}
+    {% include sitenav.html %}
 
-    <main class="content-measure">
-    <h1 class="content-block-h1">{{page.title}}</h1>
-    {{ content }}
+    <main>
+    <div class="heading">
+        <div class="heading-measure">
+
+
+        {% for category in page.categories %}
+            {% include categoryButton.html %}
+        {% endfor %}
+
+            <!-- <span class="headerCaption">{{page.categories}}</span> -->
+            <h1 id="SpeakableHeadline" class="heading-title">{{page.title}}</h1>
+            <p id="SpeakableSummary" class="heading-text">{{page.description}}</p>
+        </div>
+    </div>
+
+    <div class="content-measure post">
+        {{ content }}
+    </div>
     </main>
-    
+
     {% include footer.html %}
 </body>
 
