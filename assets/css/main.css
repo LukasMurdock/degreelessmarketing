@@ -337,6 +337,10 @@ line-height: 1.6;
     background-color: #ffffff;
 }
 
+.ideaCategories {
+    min-height: auto;
+}
+
 .ideaCategories h2 a {
     text-decoration: none;
     display: inline-flex;
