@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ideas
 title: All Marketing Ideas
 description: A collection of marketing ideas to help you do better marketing.
 date: 2020-10-17

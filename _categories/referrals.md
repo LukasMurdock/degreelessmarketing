@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ideas
 title: Referrals
 date: 2020-10-17
 description: A collection of marketing ideas to help you do better marketing.
