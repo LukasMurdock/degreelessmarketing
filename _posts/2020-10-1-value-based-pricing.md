@@ -1,6 +1,6 @@
 ---
 title: "Value Based Pricing"
-categories: [Revenue, Retention]
+categories: [Revenue]
 description: "Stop charging for features and charge customers for value gained. Charge per user, per dashboards, per 100 visits, etc."
 tags: pricing, positioning
 date: Oct 19, 2020

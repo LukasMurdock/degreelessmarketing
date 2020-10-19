@@ -48,7 +48,7 @@ margin-bottom: 15px;
 text-align: left;
 }
 
-.post > *:not(img):not(video):not(figure):not(ol) {
+.post > *:not(img):not(video):not(figure):not(ol):not(ul) {
     position: relative;
     max-width: 450px;
     margin: auto;
@@ -68,7 +68,7 @@ text-align: left;
     color: #4A5568
 }
 
-.post > ol {
+.post > ol, .post > ul {
     font-size: 1.2rem;
     line-height: 1.6;
     /* padding-top: 30px; */
