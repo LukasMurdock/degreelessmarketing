@@ -12,7 +12,7 @@ layout: post
 ## How Loyalty Programs Work
 Loyalty programs attract and retain customers by rewarding brand loyalty.
 
-Every dollar spent on brand food gives you 2 points and for 125 points you get a free reward. Every dollar spent on brand gas gets you a point and for 100 points you get 10 cents off per gallon.
+For example, every dollar spent on brand food gives you 2 points and for 125 points you get a free reward. Or, every dollar spent on *brand* gas gets you a point and for 100 points you get 10 cents off per gallon.
 
 You can cultivate extreme brand loyalty by blending these rewards into everyday routines. When a customer trusts the consistency of the experience, they will choose to further engage with their selected brand when there are rewards.
 
@@ -40,6 +40,8 @@ How was the loyalty program worth so much?
 Unlike normal expectations of a loyalty program, flying does not generate the majority of airline miles. Instead, *cross-brand partnerships* create the bulk of airline miles.
 
 Points are earned through partner promotions like co-branded credit card spending or buying a partner product. This type of loyalty program protects against downturns because people are still supporting through everyday purchases.
+
+Collecting data for marketing research further increases the value of loyalty programs, where over time, this data provides customer favorites and preferences.
 
 ## Related
 Where Starbucks and airlines make use of loyalty programs, many other retailers use paid memberships. Loyalty programs differ from paid memberships because while they can offer similar rewards, paid memberships require payment before you can fully gain rewards.
