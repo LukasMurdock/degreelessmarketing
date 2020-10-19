@@ -14,7 +14,7 @@ This strategy sets prices based on how high clients perceive the value of your o
 
 For example, the average value of client leads is $500, and you estimate that your work will lead to them acquiring 100 leads in the first year—that’s $50,000 of value. You then work out a price for your work based on a percentage of $50,000—and if you can show the value, you can justify the price.
 
-Companies with more perceived expertise are better positioned to utilize value pricing over companies that sell commoditized items. sClients with more money than time are more inclined towards value-based pricing. If a client doesn’t see value in hiring you over other, value-based pricing will fall flat.
+Companies with more perceived expertise are better positioned to utilize value pricing over companies that sell commoditized items. Clients with more money than time are more inclined towards value-based pricing. If a client doesn’t see value in hiring you over other, value-based pricing will fall flat.
 
 Instead of rushing towards the bottom by competing on price, value-based pricing gives you high rewards if your expertise delivers value.
 
