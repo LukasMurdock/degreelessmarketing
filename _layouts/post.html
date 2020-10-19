@@ -21,6 +21,7 @@
 
             <!-- <span class="headerCaption">{{page.categories}}</span> -->
             <h1 id="SpeakableHeadline" class="heading-title">{{page.title}}</h1>
+            <span class="postByline">By <a href="/contact">{{page.author}}</a> | Updated {% if page.last_modified_at %}{{ page.last_modified_at | date: '%B %d, %Y' }}{% else %}{{page.date | date: '%B %d, %Y' }}{% endif %}</span>
             <p id="SpeakableSummary" class="heading-text">{{page.description}}</p>
         </div>
     </div>
