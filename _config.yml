@@ -60,6 +60,7 @@ defaults:
     values:
       layout: post
       permalink: /ideas/:title
+      author: Lukas Murdock
   -
     scope:
       path: "" # an empty string here means all files in the project

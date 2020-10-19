@@ -1,3 +1,4 @@
+{% unless page.id %}
 <script type="application/ld+json">
   {
     "@context": "http://www.schema.org",
@@ -75,3 +76,7 @@
     ]
   }
 </script>
+{% endunless %}
+{% if page.id %}
+{% include postSchema.html %}
+{% endif %}

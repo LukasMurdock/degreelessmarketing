@@ -1,0 +1,39 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "name": "Degreeless.marketing",
+      "@id": "https://degreeless.marketing",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+            "#SpeakableHeadline",
+            "#SpeakableSummary"
+        ]
+    }
+    },
+    "headline": "{{page.title}}",
+    "description": "{{page.description}}",
+    "image": [
+      "{{page.image}}"
+      ],
+    "datePublished": "{{page.date}}",
+    "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at }}{% else %}{{page.date}}{% endif %}",
+    "author": {
+      "@type": "Person",
+      "name": "{{page.author}}"
+    },
+      "publisher": {
+      "@type": "Organization",
+      "name": "Degreeless.marketing",
+      "url": "https://degreeless.marketing",
+      "description": "Marketing for self-learners.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://degreeless.marketing/assets/images/logo.png"
+      }
+    }
+  }
+</script>s
