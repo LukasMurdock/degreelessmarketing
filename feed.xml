@@ -30,7 +30,7 @@ layout: null
         <link href="https://degreeless.marketing/ideas/{{ post.slug }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}"/>
         <id>https://degreeless.marketing/ideas/{{ post.slug }}</id>
         <published>{{ post.date | date_to_xmlschema }}</published>
-        <updated>{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{page.date | date_to_xmlschema }}{% endif %}</updated>
+        <updated>{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{posts.date | date_to_xmlschema }}{% endif %}</updated>
         <description><![CDATA[{{post.description}}]]></description>
         <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/{{post.url}}">
         
