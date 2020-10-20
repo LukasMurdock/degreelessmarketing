@@ -95,6 +95,10 @@ collections:
   categories:
     output: true
 
+feed:
+  collections:
+    posts:
+      path: "/posts.xml"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
