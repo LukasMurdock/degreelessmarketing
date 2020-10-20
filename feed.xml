@@ -33,7 +33,7 @@ layout: null
         <updated>{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{post.date | date_to_xmlschema }}{% endif %}</updated>
         <summary><![CDATA[{{post.description}}]]></summary>
         <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/{{post.url}}">
-        <![CDATA[<a href="https://degreeless.marketing/ideas/{{ post.slug }}"></a>{{ post.content }}]]>
+        <![CDATA[<a href="https://degreeless.marketing/ideas/{{ post.slug }}"></a><p>{{post.description}}</p>{{ post.content }}]]>
         </content>
         <category term="Marketing Ideas"/>
       </entry>
