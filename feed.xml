@@ -27,13 +27,16 @@ layout: null
     {% for post in site.posts %}
       <entry>
         <title>{{ post.title | xml_escape }}</title>
+        <link href="https://degreeless.marketing/ideas/{{ post.slug }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}"/>
         <id>https://degreeless.marketing/ideas/{{ post.slug }}</id>
-        <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/">
-        <![CDATA[<a href="https://degreeless.marketing/ideas/{{ post.slug }}"></a>]]>{{ post.content | strip_html | escape }}
+        <published>{{ post.date | date_to_xmlschema }}</published>
+        <updated>{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{page.date | date_to_xmlschema }}{% endif %}</updated>
+        <description><![CDATA[{{post.description}}]]></description>
+        <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/{{post.url}}">
+        
+        <![CDATA[<a href="https://degreeless.marketing/ideas/{{ post.slug }}"></a>{{ post.content }}]]>
         </content>
         <category term="Marketing Ideas"/>
-        <published>{{ post.date | date_to_xmlschema }}</published>
       </entry>
     {% endfor %}
 
