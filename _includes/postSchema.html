@@ -23,7 +23,7 @@
     "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at }}{% else %}{{page.date}}{% endif %}",
     "author": {
       "@type": "Person",
-      "name": "{{page.author}}"
+      "name": "{{site.data.authors[page.author].name}}"
     },
       "publisher": {
       "@type": "Organization",
