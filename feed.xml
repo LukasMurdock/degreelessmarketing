@@ -31,9 +31,8 @@ layout: null
         <id>https://degreeless.marketing/ideas/{{ post.slug }}</id>
         <published>{{ post.date | date_to_xmlschema }}</published>
         <updated>{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{posts.date | date_to_xmlschema }}{% endif %}</updated>
-        <description><![CDATA[{{post.description}}]]></description>
+        <summary><![CDATA[{{post.description}}]]></summary>
         <content type="html" xml:lang="en" xml:base="https://degreeless.marketing/{{post.url}}">
-        
         <![CDATA[<a href="https://degreeless.marketing/ideas/{{ post.slug }}"></a>{{ post.content }}]]>
         </content>
         <category term="Marketing Ideas"/>
