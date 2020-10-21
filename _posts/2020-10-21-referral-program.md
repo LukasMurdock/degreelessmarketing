@@ -50,8 +50,8 @@ What you are offering should increase the familiarity and intimacy between you a
 1. **Have a valuable product.** Start a referral program when your product is good enough that people refer others without any other incentive.
 2. **Build viral loops into the product.** Optimize the steps between one person inviting the next.
 
-## Referral Program Examples
-https://referralmarketingschool.org/
+## Referral Program Example
+<!-- https://referralmarketingschool.org/ -->
 
 ### Morning Brew
 In 2015, While helping college classmates get ready for job interviews, Alex Lieberman noticed they were failing to connect with traditional business news, [so he created a daily newsletter that later became Morning Brew](https://www.morningbrew.com/daily/stories/2020/04/13/morning-brew-turns-5-hits-2-million-subscribers).
