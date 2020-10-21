@@ -50,7 +50,6 @@ social:
 
 include:
   - _headers
-  - _categories
 
 defaults:
   -
@@ -76,14 +75,14 @@ defaults:
       image: /assets/images/weblogo.png
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: "_categories" # an empty string here means all files in the project
       type: "categories"
     values:
       layout: post
       permalink: /ideas/:title
       
 
-permalink: /:categories/:title
+# permalink: /:categories/:title
 
 collections:
   books:
@@ -94,6 +93,7 @@ collections:
     layout: post
   categories:
     output: true
+    permalink: /ideas/:title
 
 feed:
   collections:
