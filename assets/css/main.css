@@ -48,7 +48,7 @@ margin-bottom: 15px;
 text-align: left;
 }
 
-.post > *:not(img):not(video):not(figure):not(ol):not(ul) {
+.post > *:not(img):not(video):not(figure):not(ol):not(ul):not(blockquote) {
     position: relative;
     max-width: 450px;
     margin: auto;
@@ -68,7 +68,11 @@ text-align: left;
     color: #4A5568
 }
 
-.post > ol, .post > ul {
+.post a {
+    color: #DD3532;
+}
+
+.post > ol, .post > ul, .post > blockquote {
     font-size: 1.2rem;
     line-height: 1.6;
     /* padding-top: 30px; */
@@ -77,6 +81,14 @@ text-align: left;
     max-width: 450px;
     margin: auto;
     padding-right: 20px;
+}
+
+.post blockquote {
+    background: #F7FAFC;
+    border-left: 10px solid #A0AEC0;
+    margin-bottom: 15px;
+    padding: 0.5em 20px;
+    quotes: "\201C""\201D""\2018""\2019";
 }
 
 .post img {
