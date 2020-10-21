@@ -1,76 +1,84 @@
 ---
-title: "Value Based Pricing"
-categories: [Revenue]
-description: "Stop charging for features and charge customers for value gained. Charge per user, per dashboards, per 100 visits, etc."
-tags: pricing, positioning
-date: Oct 19, 2020
+title: "Referral Program"
+categories: [Referrals]
+description: "Incentivize people to share unique referral codes and reward them proportional to the number of referrals they generate."
+tag: social, budgeted, viral-loop
+date: Oct 21, 2020
 layout: post
 ---
 
-## How Value Based Pricing Works
-Value-based pricing is finding a price for your work based on the value of the business outcomes. The price given is usually a percentage perceived as fair based on quantifiable metrics.
+## How Referral Programs Work
+Word-of-mouth referrals are the one true corner-stone of marketing strategy over time. 
 
-This strategy sets prices based on how high clients perceive the value of your offering—the price is set by belief and trust.
+In the early 2000s, PayPal achieved nearly 10% growth daily—without our social media platforms. [PayPal spent 60-70 million dollars on offering tiered levels of money directly into PayPal accounts](https://youtu.be/vDwzmJpI4io?t=690)—you could earn $100 by referring five people. They had 100,000 users in their first month and by March had grown to one million. By the end of the year, they had five-million.
+The founder of Dropbox, Drew Houston, said the success of the program at PayPal inspired the referral program at Dropbox.
 
-For example, the average value of client leads is $500, and you estimate that your work will lead to them acquiring 100 leads in the first year—that’s $50,000 of value. You then work out a price for your work based on a percentage of $50,000—and if you can show the value, you can justify the price.
+By giving people unique referral codes and offering rewards for hitting a set number of referrals, referral programs increase referrals, brand awareness, and revenue. 
 
-Companies with more perceived expertise are better positioned to utilize value pricing over companies that sell commoditized items. Clients with more money than time are more inclined towards value-based pricing. If a client doesn’t see value in hiring you over other, value-based pricing will fall flat.
+Referral programs often provide two types of rewards:
+1. Referral rewards such as points, cash, discounts, or free merch incentivize current customers. 
+2. Customers who refer new customers benefit through increased visibility and recognition as specialists or special treatment—possibly by becoming partners.
 
-Instead of rushing towards the bottom by competing on price, value-based pricing gives you high rewards if your expertise delivers value.
+However, having a referral program does not immediately lead to more significant customer acquisition. The desire to share has to be there for any referral program to be effective. Referrals won’t happen if people feel that sharing the content will lower their status because it is subpar or not inline with them. It’s best to cultivate a desire to share.
 
-To increase your value, you need differentiators, including:
-- A specialized service
-- An individualized style
-- Industry credibility
-- Excellent soft-skills
-- Attractive personality
+With digital referral tools, it’s possible to have a system that tracks user traffic and behavior to offer referrals to other known online customers.
 
-To start value-based pricing and increase your value, you need to:
-1. Find who it’s for
-2. Know what it’s worth
-3. Prove what it’s worth
+The goal is to create a viral effect and make the participants spread the word about the competition for you. Reward users who rank in the top x spots or reach a certain number of points.
 
-### Why People Compete on Price
-Most companies seek to gain customers with the low pricing of their products and services.
+### Examples of rewards
+- Free Products
+- Money towards product
+- Discounts
+- Branded Merch
+- Exclusive content
+- Early Access
 
-Famously known for winning this race was Henry Ford with automobile production. By merging the conveyor belt and assembly line, the time to create automobiles dropped to 93 minutes.
+## The Viral Loop
+Andrew Chen, investor and partner at Andreessen Horowitz, [defines viral loops](https://andrewchen.co/whats-your-viral-loop-understanding-the-engine-of-adoption/) as 
 
-Lowering pricing is an advantage for market leaders who can survive due to their scale. Most small business owners and partners insecure about their product’s price validate decreasing prices by the primary anchor they see—established market leaders. But for most of us, winning with the cheapest product is a race to the bottom and a terrible idea.
+> the steps a user goes through between entering the site to inviting the next set of new users.
 
-### Cheap isn’t respected
-If your selling proposition is *cheap*, you’ll lose all your customers to the next company that shows up with a similar product but less expensive. And when you’re no longer the cheapest, you have to cut costs further or stop rushing to the bottom.
+And in a [2007 interview with Lance Tokuda](https://venturebeat.com/2007/06/11/q-a-with-rockyou-three-hit-apps-on-facebook-and-counting/), chief executive of RockYou, Tokuda explains
 
-Their ability to devalue themselves and their offering is the value of companies selling with *cheap*. These companies are unable to win customers through merit, forcing them to fight for existence.
+> The viral loop of people inviting each other to most social networks revolves around a user posting a widget to their page and having friends see their page. The viral loops for Facebook (there are multiple) revolve around the news feed, the mini-feed and the invite request. Not around people coming to your page and interacting with it
 
-Lower pricing is advantageous only for companies capable of maintaining margins for similar or better products than competitors.
+Viral loops are another way to talk about referral programs—optimizing the steps between one person adding another.
 
-Cheap pricing is suspicious. You’re forced to compete against the higher quality of products that benefit from their higher prices—and people are influenced to perceive they cost more because they provide something better. Cheap products encourage questioning why they’re cheap—and usually, buying a cheap product means purchasing an inferior product that makes customers feel stupid. And a business that makes customers feel dumb is unable to build a sustainable business.
+What you are offering should increase the familiarity and intimacy between you and your customers—ideally influencing your customers to do nothing but speak about you.
 
-When you build a sustainable business with loyal customers, the price of your offering is of relatively little importance.
+### How do you build an effective referral program?
+1. **Have a valuable product.** Start a referral program when your product is good enough that people refer others without any other incentive.
+2. **Build viral loops into the product.** Optimize the steps between one person inviting the next.
 
-### How to Find Who It’s for
-To successfully utilize value-based pricing, you must invest time to understand the attitudes and aspirations of those you seek to change. The success of value-based pricing lies directly in your ability to perceptually enhance your product’s value in your client’s mind.
+## Referral Program Examples
+https://referralmarketingschool.org/
 
-Begin by understanding that we all use narratives to navigate the world and acknowledge that every person’s narrative is different. By clearly understanding the desires, frustrations, and personalities of the people you seek to change, your business will be more effective.
+### Morning Brew
+In 2015, While helping college classmates get ready for job interviews, Alex Lieberman noticed they were failing to connect with traditional business news, [so he created a daily newsletter that later became Morning Brew](https://www.morningbrew.com/daily/stories/2020/04/13/morning-brew-turns-5-hits-2-million-subscribers).
 
-A standard process is identifying different personas of customers. Give life to a persona with a rough sketch of their face and a given name and job role. Further exploration should include demographic information; for example, they live in the countryside, so they are less likely to use mobile ride apps. Capturing the specific customer needs and frustrations your product is trying to solve or the opportunity you’re trying to address is critical. Then, and only then, can ideas arise to meet those needs.
+Morning Brew is a free daily newsletter covering the latest news from “Wall St. to Silicon Valley” in an informative and witty manner that gives you everything you need to start your day.
 
-A persona should include:
-- Sketch and Name
-- Demographics and psychographics
-- Pain points and needs
-- Potential solutions
+On April 5, 2020, Morning Brew hit 2 million subscribers and reports it will turn profit on revenue of $20 million this year. Knowing a thing or two about viral loops, Morning Brew has a compelling referral program within every newsletter.
 
-Qualify potential clients on first engagements by telling them you won’t be the cheapest option and asking if that’s okay with them or if they primarily buy on price. You’ll filter out those that only purchase on price, nudge the conversation towards the value you provide and gain respect from clients seeking value.
+On March 23, 2020, Cofounder of Morning Brew, Austin Rief tweeted
 
-### How to Know What It’s Worth
-You have to believe in the value you offer. Your confidence and passion directly influence how the quality of your product is perceived. If you don’t fully believe in your value, pricing is second-guessed—vision without confidence is an engine without fuel.
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">5/ Referrals<br><br>Our #1 source of growth is referrals. Last week, they were up over 30% compared to a normal week. <br><br>Our hypothesis: this is the result of 1) our content being particularly engaging + relevant at this time 2) quarantine → free time. <a href="https://t.co/MF22IDRzWu">pic.twitter.com/MF22IDRzWu</a></p>&mdash; Austin Rief ☕️ (@austin_rief) <a href="https://twitter.com/austin_rief/status/1242263280644743168?ref_src=twsrc%5Etfw">March 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Commoditization happens when the seller is not confident on the value of the product and the perceived value of the product resorts to price. Commoditization makes it difficult to sell at a higher price, and instead customers choose the lower-priced product. Being able to nudge the conversation into talking about the value of the product allows you to justify the price.
+When Tyler Denk joined Morning Brew in 2017, he aimed to create [the most badass and effective referral tool in the world](https://medium.com/the-mission/how-morning-brews-referral-program-built-an-audience-of-1-5-million-subscribers-3315482c1aa5).
 
-When you believe in the value of what you offer, a true belief that what you offer is beneficial, people are influenced and you will attract the right kind of people—people who want what you offer at the price your offer it at.
+The referral machine at Morning Brew is home-brewed, and enables
+- Tracking referrals with unique referral links
+- Creating landing pages to make education and motivate
+- Making it easy to refer with share buttons
+- Motivating referrals with a real-time counter
+- Avoiding bots and fraud through double-opt-in and safeguards
+- Testing customized referral messaging
+- Picking rewards for key referral milestones
+- Choosing referral marketing instead of paid acquisition
 
-### How to Prove What It’s Worth
-Find proof through the success of current and past clients. Optimize the value perception of your offering further by having every employee understand the value you provide. All employees should have an answer to ”what is value, and how do we measure it?” The answer to that question will be unique to each company, influenced by its offering, location, customers, and strategy. Having this established answer lets companies utilize value-based pricing.
+And [Tyler describes their referrals program](https://medium.com/the-mission/how-morning-brews-referral-program-built-an-audience-of-1-5-million-subscribers-3315482c1aa5) as responsible for
 
-## Value Based Pricing Examples
+> over 30% of our total subscribers and is the “secret sauce” that makes our growth flywheel spin. It’s helped turn readers into evangelists and evangelists into walking advertisements. It’s the ultimate 1 + 1 = 3 scenario that makes all of our acquisition channels X times more effective.
+
+Morning Brew reminds readers every day by constantly changing what referral rewards a reader sees on any given day based on their referral count and motivates through a real-time counter of how many referrals someone has, alongside “You’re only X referrals away from receiving Y!”
+
