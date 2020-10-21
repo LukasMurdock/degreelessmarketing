@@ -17,7 +17,7 @@ By giving people unique referral codes and offering rewards for hitting a set nu
 
 Referral programs often provide two types of rewards:
 1. Referral rewards such as points, cash, discounts, or free merch incentivize current customers. 
-2. Customers who refer new customers benefit through increased visibility and recognition as specialists or special treatment—possibly by becoming partners.
+2. Customers who refer new customers benefit through increased visibility and recognition as specialists or special treatment, possibly becoming partners.
 
 However, having a referral program does not immediately lead to more significant customer acquisition. The desire to share has to be there for any referral program to be effective. Referrals won’t happen if people feel that sharing the content will lower their status because it is subpar or not inline with them. It’s best to cultivate a desire to share.
 
@@ -34,7 +34,7 @@ The goal is to create a viral effect and make the participants spread the word a
 - Early Access
 
 ## The Viral Loop
-Andrew Chen, investor and partner at Andreessen Horowitz, [defines viral loops](https://andrewchen.co/whats-your-viral-loop-understanding-the-engine-of-adoption/) as 
+Andrew Chen, investor and partner at Andreessen Horowitz [defines viral loops](https://andrewchen.co/whats-your-viral-loop-understanding-the-engine-of-adoption/) as 
 
 > the steps a user goes through between entering the site to inviting the next set of new users.
 
@@ -54,19 +54,19 @@ What you are offering should increase the familiarity and intimacy between you a
 <!-- https://referralmarketingschool.org/ -->
 
 ### Morning Brew
-In 2015, While helping college classmates get ready for job interviews, Alex Lieberman noticed they were failing to connect with traditional business news, [so he created a daily newsletter that later became Morning Brew](https://www.morningbrew.com/daily/stories/2020/04/13/morning-brew-turns-5-hits-2-million-subscribers).
+In 2015, While helping college classmates get ready for job interviews, Alex Lieberman noticed they were failed to connect with traditional business news, [so he created a daily newsletter that later became Morning Brew](https://www.morningbrew.com/daily/stories/2020/04/13/morning-brew-turns-5-hits-2-million-subscribers).
 
 Morning Brew is a free daily newsletter covering the latest news from “Wall St. to Silicon Valley” in an informative and witty manner that gives you everything you need to start your day.
 
-On April 5, 2020, Morning Brew hit 2 million subscribers and reports it will turn profit on revenue of $20 million this year. Knowing a thing or two about viral loops, Morning Brew has a compelling referral program within every newsletter.
+On April 5, 2020, Morning Brew hit 2 million subscribers and reports it will turn profit on revenue of $20 million this year. Knowing a thing or two about viral loops, Morning Brew has an effective referral program within every newsletter.
 
-On March 23, 2020, Cofounder of Morning Brew, Austin Rief tweeted
+On March 23, 2020, Cofounder of Morning Brew, Austin Rief, tweeted
 
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">5/ Referrals<br><br>Our #1 source of growth is referrals. Last week, they were up over 30% compared to a normal week. <br><br>Our hypothesis: this is the result of 1) our content being particularly engaging + relevant at this time 2) quarantine → free time. <a href="https://t.co/MF22IDRzWu">pic.twitter.com/MF22IDRzWu</a></p>&mdash; Austin Rief ☕️ (@austin_rief) <a href="https://twitter.com/austin_rief/status/1242263280644743168?ref_src=twsrc%5Etfw">March 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 When Tyler Denk joined Morning Brew in 2017, he aimed to create [the most badass and effective referral tool in the world](https://medium.com/the-mission/how-morning-brews-referral-program-built-an-audience-of-1-5-million-subscribers-3315482c1aa5).
 
-The referral machine at Morning Brew is home-brewed, and enables
+The referral machine at Morning Brew is home-brewed and enables
 - Tracking referrals with unique referral links
 - Creating landing pages to make education and motivate
 - Making it easy to refer with share buttons
@@ -80,5 +80,5 @@ And [Tyler describes their referrals program](https://medium.com/the-mission/how
 
 > over 30% of our total subscribers and is the “secret sauce” that makes our growth flywheel spin. It’s helped turn readers into evangelists and evangelists into walking advertisements. It’s the ultimate 1 + 1 = 3 scenario that makes all of our acquisition channels X times more effective.
 
-Morning Brew reminds readers every day by constantly changing what referral rewards a reader sees on any given day based on their referral count and motivates through a real-time counter of how many referrals someone has, alongside “You’re only X referrals away from receiving Y!”
+Every day Morning Brew reminds readers by constantly changing what referral rewards a reader sees based on their referral count and motivates through a real-time counter of how many referrals someone has, alongside “You’re only X referrals away from receiving Y!”
 
