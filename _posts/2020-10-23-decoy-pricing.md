@@ -25,7 +25,7 @@ A decoy pricing strategy that utilizes a higher-priced product allows consumers 
 
 ## Decoy Pricing Examples
 
-### The Economist (priced the same)
+### The Economist
 The Economist magazine is famously cited for its implementation of decoy pricing strategy and changes its pricing structure quite often and continuously implements the decoy effect to increase revenue. 
 
 The most famous examples is the offering of three subscription options: digital, print, and print + digital.
