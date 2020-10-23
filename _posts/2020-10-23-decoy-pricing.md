@@ -1,10 +1,14 @@
 ---
-title: "Decoy Pricing"
-categories: [Revenue]
-description: "Raise the perceptual value of your products by introducing a decoy product at a similar price but different value."
+title: Decoy Pricing
+categories:
+- Revenue
+description: Raise the perceptual value of your products by introducing a decoy product
+  at a similar price but different value.
+image: /assets/images/posts/2020-10-23-decoy-pricing.jpg
 tag: pricing, psych, cashfree
 date: Oct 23, 2020
 layout: post
+
 ---
 
 ## How Decoy Pricing Works

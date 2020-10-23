@@ -1,10 +1,14 @@
 ---
-title: "Referral Program"
-categories: [Referrals]
-description: "Incentivize people to share unique referral codes and reward them proportional to the number of referrals they generate."
+title: Referral Program
+categories:
+- Referrals
+description: Incentivize people to share unique referral codes and reward them proportional
+  to the number of referrals they generate.
+image: /assets/images/posts/2020-10-21-referral-program.jpg
 tag: social, budgeted, viral-loop
 date: Oct 21, 2020
 layout: post
+
 ---
 
 ## How Referral Programs Work

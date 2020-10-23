@@ -1,10 +1,14 @@
 ---
-title: "Value Based Pricing"
-categories: [Revenue]
-description: "Stop charging for features and charge customers for value gained. Charge per user, per dashboards, per 100 visits, etc."
+title: Value Based Pricing
+categories:
+- Revenue
+description: Stop charging for features and charge customers for value gained. Charge
+  per user, per dashboards, per 100 visits, etc.
+image: /assets/images/posts/2020-10-19-value-based-pricing.jpg
 tags: pricing, positioning
 date: Oct 19, 2020
 layout: post
+
 ---
 
 

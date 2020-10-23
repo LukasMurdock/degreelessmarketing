@@ -17,7 +17,7 @@
     "headline": "{{page.title}}",
     "description": "{{page.description}}",
     "image": [
-      "{{page.image}}"
+      "{{site.url}}/assets/images/posts/{{page.image}}"
       ],
     "datePublished": "{{page.date}}",
     "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at }}{% else %}{{page.date}}{% endif %}",

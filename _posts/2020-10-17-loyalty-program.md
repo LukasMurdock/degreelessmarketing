@@ -1,10 +1,15 @@
 ---
 title: Loyalty Programs
-categories: [Revenue, Retention]
-description: "Create a loyalty program that will reward your customers for buying. Each purchase should bring people closer to a reward."
+categories:
+- Revenue
+- Retention
+description: Create a loyalty program that will reward your customers for buying.
+  Each purchase should bring people closer to a reward.
+image: /assets/images/posts/2020-10-17-loyalty-program.jpg
 tags: cashfree
 date: Oct 17, 2020
 layout: post
+
 ---
 
 <!-- <figure><img src="/assets/images/weblogo.png" alt=""></figure> -->
