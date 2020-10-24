@@ -100,7 +100,7 @@ Dir.foreach(book_dir) do |filename|
             unless response.empty? then
               unless response["url"].nil? then
 
-                image_url = response["url"]
+                image_url = response["url"]+".jpg"
                 imageName = File.basename(book_dir+filename, ".md")
 
                 URI.open(image_url) do |image|
