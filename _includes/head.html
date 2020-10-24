@@ -1,6 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.index == 'noindex' %}<meta name="robots" content="noindex">{% endif %}
     <title>{% if page.title == nil or page.title == blank %}(1) Lost{% else %}{{ page.title }}{% endif %}{% unless page.url == "/" or  page.title == nil or page.title == blank %} | Degreeless.marketing{% endunless %}</title>
     <meta name="description" content="{{ page.description }}">
     <!-- <link rel='canonical' href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | downcase}}"> -->
@@ -26,6 +27,12 @@
     <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
     <meta property="og:site_name" content="Degreeless.marketing" />
     <meta property="og:image" content="{{ page.image | prepend: site.url }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:image" content="{{ page.image | prepend: site.url }}" />
+    <meta property="twitter:title" content="{% if page.title == nil or page.title == blank %}(1) Lost{% else %}{{ page.title }}{% endif %}{% unless page.title == 'Degreeless.marketing' and  page.title == nil and page.title == blank %} | Degreeless.marketing{% endunless %}" />
+    <meta name="twitter:site" content="@MurdockLukas" />
+    <meta name="twitter:creator" content="@{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}MurdockLukas{% endif %}" />
+
     <meta name="ahrefs-site-verification" content="cdfe02e1e8a05e4ff05b25088bb723d7cd2cab01fba8a08223274bf41a12e4a3">
 
     {% include schema.html %}
