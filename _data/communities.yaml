@@ -40,3 +40,9 @@
     numbers behind their companies and side projects.
   image: "/assets/images/resources/indie-hackers.svg"
   radius: false
+- title: Strategic Coach
+  link: https://www.strategiccoach.com/
+  date: Jan 5, 2021
+  description: Discover how you can grow your business exponentially with the leading company in business coaching for entrepreneurs.
+  image: "/assets/images/resources/strategic-coach.jpeg"
+  radius: true

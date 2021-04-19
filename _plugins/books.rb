@@ -34,6 +34,8 @@ Dir.foreach(book_dir) do |filename|
 
       bookArray.insert(3, insert_array)
 
+      p bookArray
+
       bookYaml = bookArray.to_h.to_yaml + "\n---\n" + bookText
       
       File.open(book_dir+filename, "w") {|f| f.write(bookYaml)}
